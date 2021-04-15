@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB404262808DF00C83649 /* AppCoordinator.swift */; };
+		93FAB40B2628096200C83649 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB40A2628096200C83649 /* Coordinator.swift */; };
+		93FAB41226280A4600C83649 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41126280A4600C83649 /* Login.storyboard */; };
+		93FAB41526280A6400C83649 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* LoginCoordinator.swift */; };
+		93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41926280C5900C83649 /* Nunito.ttf */; };
 		E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */; };
 		E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */; };
 		E64B63D8261A488E00ABE6E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D7261A488E00ABE6E4 /* ViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93FAB404262808DF00C83649 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		93FAB40A2628096200C83649 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		93FAB41126280A4600C83649 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		93FAB41426280A6400C83649 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		93FAB41926280C5900C83649 /* Nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nunito.ttf; path = ../../../../Downloads/nunito/Nunito.ttf; sourceTree = "<group>"; };
 		E64B63D0261A488E00ABE6E4 /* NotForgotAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotForgotAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93FAB4002628082700C83649 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				93FAB407262808FF00C83649 /* Login */,
+				E64B63E1261A489400ABE6E4 /* LaunchScreen.storyboard */,
+				93FAB404262808DF00C83649 /* AppCoordinator.swift */,
+				93FAB40A2628096200C83649 /* Coordinator.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		93FAB407262808FF00C83649 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				93FAB4102628099A00C83649 /* Views */,
+				93FAB40F2628098F00C83649 /* ViewControllers */,
+				93FAB40E2628098100C83649 /* ViewModels */,
+				93FAB4082628090A00C83649 /* Models */,
+				93FAB41126280A4600C83649 /* Login.storyboard */,
+				93FAB41426280A6400C83649 /* LoginCoordinator.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		93FAB4082628090A00C83649 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93FAB40E2628098100C83649 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93FAB40F2628098F00C83649 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		93FAB4102628099A00C83649 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93FAB41726280BD400C83649 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93FAB41926280C5900C83649 /* Nunito.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93FAB41826280BE200C83649 /* RawImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RawImages;
+			sourceTree = "<group>";
+		};
 		E64B63C7261A488E00ABE6E4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +135,14 @@
 		E64B63D2261A488E00ABE6E4 /* NotForgotAgain */ = {
 			isa = PBXGroup;
 			children = (
+				93FAB41826280BE200C83649 /* RawImages */,
+				93FAB41726280BD400C83649 /* Fonts */,
+				93FAB4002628082700C83649 /* Scenes */,
 				E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */,
 				E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */,
 				E64B63D7261A488E00ABE6E4 /* ViewController.swift */,
 				E64B63D9261A488E00ABE6E4 /* Main.storyboard */,
 				E64B63DF261A489400ABE6E4 /* Assets.xcassets */,
-				E64B63E1261A489400ABE6E4 /* LaunchScreen.storyboard */,
 				E64B63E4261A489400ABE6E4 /* Info.plist */,
 				E64B63DC261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld */,
 			);
@@ -127,6 +206,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FAB41226280A4600C83649 /* Login.storyboard in Resources */,
+				93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */,
 				E64B63E3261A489400ABE6E4 /* LaunchScreen.storyboard in Resources */,
 				E64B63E0261A489400ABE6E4 /* Assets.xcassets in Resources */,
 				E64B63DB261A488E00ABE6E4 /* Main.storyboard in Resources */,
@@ -140,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */,
 				E64B63D8261A488E00ABE6E4 /* ViewController.swift in Sources */,
+				93FAB41526280A6400C83649 /* LoginCoordinator.swift in Sources */,
+				93FAB40B2628096200C83649 /* Coordinator.swift in Sources */,
 				E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */,
 				E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */,
 				E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */,
