@@ -12,6 +12,12 @@
 		93FAB41226280A4600C83649 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41126280A4600C83649 /* Login.storyboard */; };
 		93FAB41526280A6400C83649 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* LoginCoordinator.swift */; };
 		93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41926280C5900C83649 /* Nunito.ttf */; };
+		93FAB422262817E600C83649 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41F262817E600C83649 /* pencil.png */; };
+		93FAB423262817E600C83649 /* chillGuy.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB420262817E600C83649 /* chillGuy.png */; };
+		93FAB424262817E600C83649 /* tabletWithPen.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB421262817E600C83649 /* tabletWithPen.png */; };
+		93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB426262817F300C83649 /* tabletWithPen.svg */; };
+		93FAB42A262817F400C83649 /* chillGuy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB427262817F300C83649 /* chillGuy.svg */; };
+		93FAB42B262817F400C83649 /* pencil.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB428262817F300C83649 /* pencil.svg */; };
 		E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */; };
 		E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */; };
 		E64B63D8261A488E00ABE6E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D7261A488E00ABE6E4 /* ViewController.swift */; };
@@ -27,6 +33,12 @@
 		93FAB41126280A4600C83649 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		93FAB41426280A6400C83649 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		93FAB41926280C5900C83649 /* Nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nunito.ttf; path = ../../../../Downloads/nunito/Nunito.ttf; sourceTree = "<group>"; };
+		93FAB41F262817E600C83649 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pencil.png; path = rawAssets/rawImages/images/PNG/pencil.png; sourceTree = SOURCE_ROOT; };
+		93FAB420262817E600C83649 /* chillGuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chillGuy.png; path = rawAssets/rawImages/images/PNG/chillGuy.png; sourceTree = SOURCE_ROOT; };
+		93FAB421262817E600C83649 /* tabletWithPen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabletWithPen.png; path = rawAssets/rawImages/images/PNG/tabletWithPen.png; sourceTree = SOURCE_ROOT; };
+		93FAB426262817F300C83649 /* tabletWithPen.svg */ = {isa = PBXFileReference; lastKnownFileType = file; name = tabletWithPen.svg; path = rawAssets/rawImages/images/SVG/tabletWithPen.svg; sourceTree = SOURCE_ROOT; };
+		93FAB427262817F300C83649 /* chillGuy.svg */ = {isa = PBXFileReference; lastKnownFileType = file; name = chillGuy.svg; path = rawAssets/rawImages/images/SVG/chillGuy.svg; sourceTree = SOURCE_ROOT; };
+		93FAB428262817F300C83649 /* pencil.svg */ = {isa = PBXFileReference; lastKnownFileType = file; name = pencil.svg; path = rawAssets/rawImages/images/SVG/pencil.svg; sourceTree = SOURCE_ROOT; };
 		E64B63D0261A488E00ABE6E4 /* NotForgotAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotForgotAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,8 +124,30 @@
 		93FAB41826280BE200C83649 /* RawImages */ = {
 			isa = PBXGroup;
 			children = (
+				93FAB41E262817D500C83649 /* SVG */,
+				93FAB41D262817CF00C83649 /* PNG */,
 			);
 			path = RawImages;
+			sourceTree = "<group>";
+		};
+		93FAB41D262817CF00C83649 /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				93FAB420262817E600C83649 /* chillGuy.png */,
+				93FAB41F262817E600C83649 /* pencil.png */,
+				93FAB421262817E600C83649 /* tabletWithPen.png */,
+			);
+			path = PNG;
+			sourceTree = "<group>";
+		};
+		93FAB41E262817D500C83649 /* SVG */ = {
+			isa = PBXGroup;
+			children = (
+				93FAB427262817F300C83649 /* chillGuy.svg */,
+				93FAB428262817F300C83649 /* pencil.svg */,
+				93FAB426262817F300C83649 /* tabletWithPen.svg */,
+			);
+			path = SVG;
 			sourceTree = "<group>";
 		};
 		E64B63C7261A488E00ABE6E4 = {
@@ -206,11 +240,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93FAB422262817E600C83649 /* pencil.png in Resources */,
 				93FAB41226280A4600C83649 /* Login.storyboard in Resources */,
 				93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */,
+				93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */,
 				E64B63E3261A489400ABE6E4 /* LaunchScreen.storyboard in Resources */,
+				93FAB42B262817F400C83649 /* pencil.svg in Resources */,
 				E64B63E0261A489400ABE6E4 /* Assets.xcassets in Resources */,
 				E64B63DB261A488E00ABE6E4 /* Main.storyboard in Resources */,
+				93FAB42A262817F400C83649 /* chillGuy.svg in Resources */,
+				93FAB423262817E600C83649 /* chillGuy.png in Resources */,
+				93FAB424262817E600C83649 /* tabletWithPen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
