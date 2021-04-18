@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB404262808DF00C83649 /* AppCoordinator.swift */; };
 		93FAB40B2628096200C83649 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB40A2628096200C83649 /* Coordinator.swift */; };
-		93FAB41226280A4600C83649 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41126280A4600C83649 /* Login.storyboard */; };
-		93FAB41526280A6400C83649 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* LoginCoordinator.swift */; };
+		93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */; };
 		93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41926280C5900C83649 /* Nunito.ttf */; };
 		93FAB422262817E600C83649 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41F262817E600C83649 /* pencil.png */; };
 		93FAB423262817E600C83649 /* chillGuy.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB420262817E600C83649 /* chillGuy.png */; };
@@ -18,10 +17,16 @@
 		93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB426262817F300C83649 /* tabletWithPen.svg */; };
 		93FAB42A262817F400C83649 /* chillGuy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB427262817F300C83649 /* chillGuy.svg */; };
 		93FAB42B262817F400C83649 /* pencil.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB428262817F300C83649 /* pencil.svg */; };
+		93FAB43226281D6100C83649 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB43126281D6100C83649 /* CustomButton.xib */; };
+		93FAB43626281E4A00C83649 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB43526281E4A00C83649 /* Login.xib */; };
+		93FAB43926283A9200C83649 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB43826283A9200C83649 /* ApiClient.swift */; };
+		93FAB43C262B0C1400C83649 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB43B262B0C1400C83649 /* LoginViewModel.swift */; };
+		93FAB43F262B0F5100C83649 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB43E262B0F5100C83649 /* LoginViewController.swift */; };
+		93FAB444262BD8CF00C83649 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB443262BD8CF00C83649 /* Register.xib */; };
+		93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB446262BE7CC00C83649 /* RegisterViewController.swift */; };
+		93FAB44A262BE80800C83649 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB449262BE80800C83649 /* RegisterViewModel.swift */; };
 		E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */; };
 		E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */; };
-		E64B63D8261A488E00ABE6E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D7261A488E00ABE6E4 /* ViewController.swift */; };
-		E64B63DB261A488E00ABE6E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64B63D9261A488E00ABE6E4 /* Main.storyboard */; };
 		E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E64B63DC261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld */; };
 		E64B63E0261A489400ABE6E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64B63DF261A489400ABE6E4 /* Assets.xcassets */; };
 		E64B63E3261A489400ABE6E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64B63E1261A489400ABE6E4 /* LaunchScreen.storyboard */; };
@@ -30,8 +35,7 @@
 /* Begin PBXFileReference section */
 		93FAB404262808DF00C83649 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		93FAB40A2628096200C83649 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		93FAB41126280A4600C83649 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		93FAB41426280A6400C83649 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeCoordinator.swift; sourceTree = "<group>"; };
 		93FAB41926280C5900C83649 /* Nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nunito.ttf; path = ../../../../Downloads/nunito/Nunito.ttf; sourceTree = "<group>"; };
 		93FAB41F262817E600C83649 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pencil.png; path = rawAssets/rawImages/images/PNG/pencil.png; sourceTree = SOURCE_ROOT; };
 		93FAB420262817E600C83649 /* chillGuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chillGuy.png; path = rawAssets/rawImages/images/PNG/chillGuy.png; sourceTree = SOURCE_ROOT; };
@@ -39,11 +43,17 @@
 		93FAB426262817F300C83649 /* tabletWithPen.svg */ = {isa = PBXFileReference; lastKnownFileType = file; name = tabletWithPen.svg; path = rawAssets/rawImages/images/SVG/tabletWithPen.svg; sourceTree = SOURCE_ROOT; };
 		93FAB427262817F300C83649 /* chillGuy.svg */ = {isa = PBXFileReference; lastKnownFileType = file; name = chillGuy.svg; path = rawAssets/rawImages/images/SVG/chillGuy.svg; sourceTree = SOURCE_ROOT; };
 		93FAB428262817F300C83649 /* pencil.svg */ = {isa = PBXFileReference; lastKnownFileType = file; name = pencil.svg; path = rawAssets/rawImages/images/SVG/pencil.svg; sourceTree = SOURCE_ROOT; };
+		93FAB43126281D6100C83649 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		93FAB43526281E4A00C83649 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		93FAB43826283A9200C83649 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		93FAB43B262B0C1400C83649 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		93FAB43E262B0F5100C83649 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		93FAB443262BD8CF00C83649 /* Register.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
+		93FAB446262BE7CC00C83649 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		93FAB449262BE80800C83649 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		E64B63D0261A488E00ABE6E4 /* NotForgotAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotForgotAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E64B63D7261A488E00ABE6E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E64B63DA261A488E00ABE6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E64B63DD261A488E00ABE6E4 /* NotForgotAgain.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotForgotAgain.xcdatamodel; sourceTree = "<group>"; };
 		E64B63DF261A489400ABE6E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64B63E2261A489400ABE6E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +74,7 @@
 		93FAB4002628082700C83649 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				93FAB407262808FF00C83649 /* Login */,
+				93FAB407262808FF00C83649 /* Authorize */,
 				E64B63E1261A489400ABE6E4 /* LaunchScreen.storyboard */,
 				93FAB404262808DF00C83649 /* AppCoordinator.swift */,
 				93FAB40A2628096200C83649 /* Coordinator.swift */,
@@ -72,17 +82,18 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		93FAB407262808FF00C83649 /* Login */ = {
+		93FAB407262808FF00C83649 /* Authorize */ = {
 			isa = PBXGroup;
 			children = (
 				93FAB4102628099A00C83649 /* Views */,
 				93FAB40F2628098F00C83649 /* ViewControllers */,
 				93FAB40E2628098100C83649 /* ViewModels */,
 				93FAB4082628090A00C83649 /* Models */,
-				93FAB41126280A4600C83649 /* Login.storyboard */,
-				93FAB41426280A6400C83649 /* LoginCoordinator.swift */,
+				93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */,
+				93FAB43526281E4A00C83649 /* Login.xib */,
+				93FAB443262BD8CF00C83649 /* Register.xib */,
 			);
-			path = Login;
+			path = Authorize;
 			sourceTree = "<group>";
 		};
 		93FAB4082628090A00C83649 /* Models */ = {
@@ -95,6 +106,8 @@
 		93FAB40E2628098100C83649 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				93FAB43B262B0C1400C83649 /* LoginViewModel.swift */,
+				93FAB449262BE80800C83649 /* RegisterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -102,6 +115,8 @@
 		93FAB40F2628098F00C83649 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				93FAB43E262B0F5100C83649 /* LoginViewController.swift */,
+				93FAB446262BE7CC00C83649 /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -109,6 +124,7 @@
 		93FAB4102628099A00C83649 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				93FAB43126281D6100C83649 /* CustomButton.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,11 +190,10 @@
 				93FAB4002628082700C83649 /* Scenes */,
 				E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */,
 				E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */,
-				E64B63D7261A488E00ABE6E4 /* ViewController.swift */,
-				E64B63D9261A488E00ABE6E4 /* Main.storyboard */,
 				E64B63DF261A489400ABE6E4 /* Assets.xcassets */,
 				E64B63E4261A489400ABE6E4 /* Info.plist */,
 				E64B63DC261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld */,
+				93FAB43826283A9200C83649 /* ApiClient.swift */,
 			);
 			path = NotForgotAgain;
 			sourceTree = "<group>";
@@ -241,16 +256,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FAB422262817E600C83649 /* pencil.png in Resources */,
-				93FAB41226280A4600C83649 /* Login.storyboard in Resources */,
+				93FAB444262BD8CF00C83649 /* Register.xib in Resources */,
 				93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */,
 				93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */,
+				93FAB43226281D6100C83649 /* CustomButton.xib in Resources */,
 				E64B63E3261A489400ABE6E4 /* LaunchScreen.storyboard in Resources */,
 				93FAB42B262817F400C83649 /* pencil.svg in Resources */,
 				E64B63E0261A489400ABE6E4 /* Assets.xcassets in Resources */,
-				E64B63DB261A488E00ABE6E4 /* Main.storyboard in Resources */,
 				93FAB42A262817F400C83649 /* chillGuy.svg in Resources */,
 				93FAB423262817E600C83649 /* chillGuy.png in Resources */,
 				93FAB424262817E600C83649 /* tabletWithPen.png in Resources */,
+				93FAB43626281E4A00C83649 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,26 +278,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */,
-				E64B63D8261A488E00ABE6E4 /* ViewController.swift in Sources */,
-				93FAB41526280A6400C83649 /* LoginCoordinator.swift in Sources */,
+				93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */,
+				93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */,
+				93FAB43926283A9200C83649 /* ApiClient.swift in Sources */,
 				93FAB40B2628096200C83649 /* Coordinator.swift in Sources */,
 				E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */,
+				93FAB44A262BE80800C83649 /* RegisterViewModel.swift in Sources */,
 				E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */,
 				E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */,
+				93FAB43F262B0F5100C83649 /* LoginViewController.swift in Sources */,
+				93FAB43C262B0C1400C83649 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E64B63D9261A488E00ABE6E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E64B63DA261A488E00ABE6E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E64B63E1261A489400ABE6E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
