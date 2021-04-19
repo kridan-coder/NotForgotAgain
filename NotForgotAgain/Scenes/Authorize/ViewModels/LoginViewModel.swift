@@ -8,6 +8,10 @@
 import Foundation
 
 class LoginViewModel{
+
+
+
     weak var coordinatorDelegate: AuthorizeCoordinator?
     
+
 }

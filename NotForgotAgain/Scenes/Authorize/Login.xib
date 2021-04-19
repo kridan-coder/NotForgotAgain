@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="NotForgotAgain" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="wPJ-AA-iXe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="foT-iS-Vfv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -37,6 +37,9 @@
                             <color key="value" name="ButtonColor"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="authorizeButtonPressed" destination="-1" eventType="touchUpInside" id="gNp-ye-o6i"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-Ry-TJM">
                     <rect key="frame" x="65.666666666666686" y="609" width="283" height="33"/>
@@ -74,7 +77,7 @@
                 <constraint firstItem="xAR-2P-dWD" firstAttribute="centerY" secondItem="Fb0-qI-3jT" secondAttribute="centerY" multiplier="0.4" id="g5d-gM-OYj"/>
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="height" secondItem="XO0-Ry-TJM" secondAttribute="height" multiplier="1.4" id="vJM-z2-XkY"/>
             </constraints>
-            <point key="canvasLocation" x="140.57971014492756" y="73.369565217391312"/>
+            <point key="canvasLocation" x="-26" y="85"/>
         </view>
     </objects>
     <resources>

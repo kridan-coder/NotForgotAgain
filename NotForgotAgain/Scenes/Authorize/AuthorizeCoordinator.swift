@@ -44,7 +44,6 @@ class AuthorizeCoordinator: Coordinator {
         
         let loginVC = LoginViewController(nibName: "Login", bundle: nil)
         loginVC.viewModel = loginViewModel
-        
         rootViewNavigationController.setViewControllers([loginVC], animated: false)
     }
 

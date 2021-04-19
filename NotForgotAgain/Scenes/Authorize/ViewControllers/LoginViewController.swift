@@ -9,6 +9,12 @@ import Foundation
 import UIKit
 
 class LoginViewController: UIViewController {
+    
     var viewModel: LoginViewModel!
+    
+    @IBAction func authorizeButtonPressed() {
+        print("sup")
+    }
+    
     
 }
