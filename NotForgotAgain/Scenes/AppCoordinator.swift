@@ -14,9 +14,7 @@ class AppCoordinator: Coordinator {
     // MARK: - Properties
     let window: UIWindow?
     
-    lazy var rootViewNavigationController: UINavigationController = {
-        return UINavigationController(rootViewController: LoginViewController())
-    }()
+    lazy var rootViewNavigationController = UINavigationController()
 
     // MARK: - Coordinator
     init(window: UIWindow?) {

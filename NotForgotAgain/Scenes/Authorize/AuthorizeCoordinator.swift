@@ -42,7 +42,7 @@ class AuthorizeCoordinator: Coordinator {
 
     override func start() {
         
-        let loginVC: LoginViewController = LoginViewController(nibName: "Login", bundle: nil)
+        let loginVC = LoginViewController(nibName: "Login", bundle: nil)
         loginVC.viewModel = loginViewModel
         
         rootViewNavigationController.setViewControllers([loginVC], animated: false)
