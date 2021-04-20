@@ -81,10 +81,7 @@ extension AuthorizeCoordinator {
     }
     
     func goToLogin(from controller: UIViewController) {
-        let loginVC: LoginViewController = LoginViewController(nibName: "Login", bundle: nil)
-        loginVC.viewModel = loginViewModel
-        
-        controller.present(loginVC, animated: true, completion: nil)
+        rootViewNavigationController.popViewController(animated: true)
     }
 
     func goToTaskList(from controller: UIViewController) {

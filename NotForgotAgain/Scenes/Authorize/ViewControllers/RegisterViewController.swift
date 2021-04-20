@@ -11,4 +11,8 @@ import UIKit
 class RegisterViewController: UIViewController {
     var viewModel: RegisterViewModel!
     
+    @IBAction func goToLogin() {
+        
+        viewModel.goToLogin(from: self)
+    }
 }
