@@ -14,7 +14,11 @@ class AppCoordinator: Coordinator {
     // MARK: - Properties
     let window: UIWindow?
     
-    lazy var rootViewNavigationController = UINavigationController()
+    lazy var rootViewNavigationController: UINavigationController = {
+        var controller = UINavigationController()
+        controller.navigationBar.prefersLargeTitles = true
+        return controller
+    }()
 
     // MARK: - Coordinator
     init(window: UIWindow?) {

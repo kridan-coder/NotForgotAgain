@@ -44,6 +44,7 @@ class AuthorizeCoordinator: Coordinator {
         
         let loginVC = LoginViewController(nibName: "Login", bundle: nil)
         loginVC.viewModel = loginViewModel
+        loginVC.title = "Войти"
         rootViewNavigationController.setViewControllers([loginVC], animated: false)
     }
 
@@ -68,13 +69,21 @@ extension AuthorizeCoordinator {
 
     func goToRegister(from controller: UIViewController) {
         let registerVC: RegisterViewController = RegisterViewController(nibName: "Register", bundle: nil)
+        
         registerVC.viewModel = registerViewModel
-        controller.present(registerVC, animated: true, completion: nil)
+        registerVC.title = "Создать аккаунт"
+        registerVC.navigationItem.setHidesBackButton(true, animated: true)
+        
+        rootViewNavigationController.pushViewController(registerVC, animated: true)
+        
+
+        //controller.present(registerVC, animated: true, completion: nil)
     }
     
     func goToLogin(from controller: UIViewController) {
         let loginVC: LoginViewController = LoginViewController(nibName: "Login", bundle: nil)
         loginVC.viewModel = loginViewModel
+        
         controller.present(loginVC, animated: true, completion: nil)
     }
 

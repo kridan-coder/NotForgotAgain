@@ -13,8 +13,11 @@ class LoginViewController: UIViewController {
     var viewModel: LoginViewModel!
     
     @IBAction func authorizeButtonPressed() {
-        print("sup")
+        
     }
     
+    @IBAction func goToRegisterButtonPressed() {
+        viewModel.goToRegister(from: self)
+    }
     
 }

@@ -25,6 +25,7 @@
 		93FAB444262BD8CF00C83649 /* Register.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB443262BD8CF00C83649 /* Register.xib */; };
 		93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB446262BE7CC00C83649 /* RegisterViewController.swift */; };
 		93FAB44A262BE80800C83649 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB449262BE80800C83649 /* RegisterViewModel.swift */; };
+		93FAB451262E991400C83649 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB450262E991400C83649 /* Extensions.swift */; };
 		E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */; };
 		E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */; };
 		E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E64B63DC261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld */; };
@@ -51,6 +52,7 @@
 		93FAB443262BD8CF00C83649 /* Register.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Register.xib; sourceTree = "<group>"; };
 		93FAB446262BE7CC00C83649 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		93FAB449262BE80800C83649 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		93FAB450262E991400C83649 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E64B63D0261A488E00ABE6E4 /* NotForgotAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotForgotAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,10 +192,11 @@
 				93FAB4002628082700C83649 /* Scenes */,
 				E64B63D3261A488E00ABE6E4 /* AppDelegate.swift */,
 				E64B63D5261A488E00ABE6E4 /* SceneDelegate.swift */,
-				E64B63DF261A489400ABE6E4 /* Assets.xcassets */,
-				E64B63E4261A489400ABE6E4 /* Info.plist */,
-				E64B63DC261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld */,
 				93FAB43826283A9200C83649 /* ApiClient.swift */,
+				93FAB450262E991400C83649 /* Extensions.swift */,
+				E64B63DC261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld */,
+				E64B63E4261A489400ABE6E4 /* Info.plist */,
+				E64B63DF261A489400ABE6E4 /* Assets.xcassets */,
 			);
 			path = NotForgotAgain;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				93FAB40B2628096200C83649 /* Coordinator.swift in Sources */,
 				E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */,
 				93FAB44A262BE80800C83649 /* RegisterViewModel.swift in Sources */,
+				93FAB451262E991400C83649 /* Extensions.swift in Sources */,
 				E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */,
 				E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */,
 				93FAB43F262B0F5100C83649 /* LoginViewController.swift in Sources */,
