@@ -16,7 +16,13 @@ class AppCoordinator: Coordinator {
     
     lazy var rootViewNavigationController: UINavigationController = {
         var controller = UINavigationController()
+        
+        var appearance = UINavigationBarAppearance()
+        appearance.shadowColor = .lightGray
+        
         controller.navigationBar.prefersLargeTitles = true
+        controller.navigationBar.scrollEdgeAppearance = appearance
+        
         return controller
     }()
 
