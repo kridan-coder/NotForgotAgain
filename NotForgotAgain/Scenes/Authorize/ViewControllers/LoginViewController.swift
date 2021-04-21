@@ -12,6 +12,18 @@ class LoginViewController: UIViewController {
     
     var viewModel: LoginViewModel!
     
+    
+    @IBOutlet var textFields: [UITextField]!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        for textField in textFields {
+            textField.addUnderline()
+        }
+        
+    }
+    
     @IBAction func authorizeButtonPressed() {
         
     }
