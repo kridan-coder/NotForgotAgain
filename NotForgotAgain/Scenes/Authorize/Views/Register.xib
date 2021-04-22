@@ -57,27 +57,23 @@
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hc9-pK-fd2" userLabel="Имя">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="28"/>
-                            <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                            <textInputTraits key="textInputTraits" textContentType="name"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почтовый ящик" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agp-co-9dF" userLabel="Почтовый ящик">
                             <rect key="frame" x="0.0" y="78" width="382" height="28"/>
-                            <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
                             <textInputTraits key="textInputTraits" textContentType="email"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-lK-obF">
                             <rect key="frame" x="0.0" y="156" width="382" height="28"/>
-                            <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OB1-gF-h8o" userLabel="Повторите пароль">
                             <rect key="frame" x="0.0" y="234" width="382" height="28"/>
-                            <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                     </subviews>
                 </stackView>
