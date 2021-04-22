@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		934E170726313BE5007820BE /* CheckTasksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E170626313BE5007820BE /* CheckTasksCoordinator.swift */; };
-		934E171026313FFD007820BE /* TasksListPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934E170F26313FFD007820BE /* TasksListPage.xib */; };
-		934E171326314061007820BE /* TasksListPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171226314061007820BE /* TasksListPageViewController.swift */; };
-		934E171626314094007820BE /* TasksListPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171526314094007820BE /* TasksListPageViewModel.swift */; };
+		934E171026313FFD007820BE /* TasksList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934E170F26313FFD007820BE /* TasksList.xib */; };
+		934E171326314061007820BE /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171226314061007820BE /* TasksListViewController.swift */; };
+		934E171626314094007820BE /* TasksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171526314094007820BE /* TasksListViewModel.swift */; };
+		934E171926316BD7007820BE /* Task.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934E171826316BD7007820BE /* Task.xib */; };
+		934E171E26316C1C007820BE /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171D26316C1C007820BE /* TaskViewController.swift */; };
+		934E172126316C36007820BE /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E172026316C36007820BE /* TaskViewModel.swift */; };
 		93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB404262808DF00C83649 /* AppCoordinator.swift */; };
 		93FAB40B2628096200C83649 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB40A2628096200C83649 /* Coordinator.swift */; };
 		93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */; };
@@ -39,9 +42,12 @@
 
 /* Begin PBXFileReference section */
 		934E170626313BE5007820BE /* CheckTasksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTasksCoordinator.swift; sourceTree = "<group>"; };
-		934E170F26313FFD007820BE /* TasksListPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksListPage.xib; sourceTree = "<group>"; };
-		934E171226314061007820BE /* TasksListPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListPageViewController.swift; sourceTree = "<group>"; };
-		934E171526314094007820BE /* TasksListPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListPageViewModel.swift; sourceTree = "<group>"; };
+		934E170F26313FFD007820BE /* TasksList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksList.xib; sourceTree = "<group>"; };
+		934E171226314061007820BE /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
+		934E171526314094007820BE /* TasksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewModel.swift; sourceTree = "<group>"; };
+		934E171826316BD7007820BE /* Task.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Task.xib; sourceTree = "<group>"; };
+		934E171D26316C1C007820BE /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		934E172026316C36007820BE /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		93FAB404262808DF00C83649 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		93FAB40A2628096200C83649 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeCoordinator.swift; sourceTree = "<group>"; };
@@ -96,7 +102,8 @@
 		934E170A26313C38007820BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				934E170F26313FFD007820BE /* TasksListPage.xib */,
+				934E170F26313FFD007820BE /* TasksList.xib */,
+				934E171826316BD7007820BE /* Task.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,7 +111,8 @@
 		934E170B26313C48007820BE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				934E171526314094007820BE /* TasksListPageViewModel.swift */,
+				934E171526314094007820BE /* TasksListViewModel.swift */,
+				934E172026316C36007820BE /* TaskViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -112,7 +120,8 @@
 		934E170C26313C51007820BE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				934E171226314061007820BE /* TasksListPageViewController.swift */,
+				934E171226314061007820BE /* TasksListViewController.swift */,
+				934E171D26316C1C007820BE /* TaskViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934E171926316BD7007820BE /* Task.xib in Resources */,
 				93FAB422262817E600C83649 /* pencil.png in Resources */,
 				93FAB444262BD8CF00C83649 /* Register.xib in Resources */,
 				93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */,
@@ -321,7 +331,7 @@
 				93FAB42A262817F400C83649 /* chillGuy.svg in Resources */,
 				93FAB423262817E600C83649 /* chillGuy.png in Resources */,
 				93FAB424262817E600C83649 /* tabletWithPen.png in Resources */,
-				934E171026313FFD007820BE /* TasksListPage.xib in Resources */,
+				934E171026313FFD007820BE /* TasksList.xib in Resources */,
 				93FAB43626281E4A00C83649 /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,11 +344,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */,
-				934E171626314094007820BE /* TasksListPageViewModel.swift in Sources */,
+				934E171626314094007820BE /* TasksListViewModel.swift in Sources */,
 				93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */,
 				93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */,
 				93FAB43926283A9200C83649 /* ApiClient.swift in Sources */,
-				934E171326314061007820BE /* TasksListPageViewController.swift in Sources */,
+				934E171E26316C1C007820BE /* TaskViewController.swift in Sources */,
+				934E171326314061007820BE /* TasksListViewController.swift in Sources */,
 				93FAB40B2628096200C83649 /* Coordinator.swift in Sources */,
 				934E170726313BE5007820BE /* CheckTasksCoordinator.swift in Sources */,
 				E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */,
@@ -348,6 +359,7 @@
 				E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */,
 				93FAB43F262B0F5100C83649 /* LoginViewController.swift in Sources */,
 				93FAB43C262B0C1400C83649 /* LoginViewModel.swift in Sources */,
+				934E172126316C36007820BE /* TaskViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
