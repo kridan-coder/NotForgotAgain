@@ -14,6 +14,8 @@
 		934E171926316BD7007820BE /* Task.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934E171826316BD7007820BE /* Task.xib */; };
 		934E171E26316C1C007820BE /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171D26316C1C007820BE /* TaskViewController.swift */; };
 		934E172126316C36007820BE /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E172026316C36007820BE /* TaskViewModel.swift */; };
+		9377B9E92631E41F0001CE01 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9E82631E41F0001CE01 /* time.png */; };
+		9377B9ED2631E5CE0001CE01 /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9EC2631E5CE0001CE01 /* label.png */; };
 		93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB404262808DF00C83649 /* AppCoordinator.swift */; };
 		93FAB40B2628096200C83649 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB40A2628096200C83649 /* Coordinator.swift */; };
 		93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */; };
@@ -48,6 +50,8 @@
 		934E171826316BD7007820BE /* Task.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Task.xib; sourceTree = "<group>"; };
 		934E171D26316C1C007820BE /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		934E172026316C36007820BE /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		9377B9E82631E41F0001CE01 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = time.png; path = "../../../../../Downloads/iPhone 11 Pro/time.png"; sourceTree = "<group>"; };
+		9377B9EC2631E5CE0001CE01 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = label.png; path = "../../../../../Downloads/iPhone 11 Pro 2/label.png"; sourceTree = "<group>"; };
 		93FAB404262808DF00C83649 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		93FAB40A2628096200C83649 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeCoordinator.swift; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 		93FAB41D262817CF00C83649 /* PNG */ = {
 			isa = PBXGroup;
 			children = (
+				9377B9EC2631E5CE0001CE01 /* label.png */,
+				9377B9E82631E41F0001CE01 /* time.png */,
 				93FAB420262817E600C83649 /* chillGuy.png */,
 				93FAB41F262817E600C83649 /* pencil.png */,
 				93FAB421262817E600C83649 /* tabletWithPen.png */,
@@ -322,12 +328,14 @@
 				934E171926316BD7007820BE /* Task.xib in Resources */,
 				93FAB422262817E600C83649 /* pencil.png in Resources */,
 				93FAB444262BD8CF00C83649 /* Register.xib in Resources */,
+				9377B9ED2631E5CE0001CE01 /* label.png in Resources */,
 				93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */,
 				93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */,
 				93FAB43226281D6100C83649 /* CustomButton.xib in Resources */,
 				E64B63E3261A489400ABE6E4 /* LaunchScreen.storyboard in Resources */,
 				93FAB42B262817F400C83649 /* pencil.svg in Resources */,
 				E64B63E0261A489400ABE6E4 /* Assets.xcassets in Resources */,
+				9377B9E92631E41F0001CE01 /* time.png in Resources */,
 				93FAB42A262817F400C83649 /* chillGuy.svg in Resources */,
 				93FAB423262817E600C83649 /* chillGuy.png in Resources */,
 				93FAB424262817E600C83649 /* tabletWithPen.png in Resources */,
