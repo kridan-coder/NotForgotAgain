@@ -65,7 +65,8 @@ class AuthorizeCoordinator: Coordinator {
 //}
 
 
-extension AuthorizeCoordinator {
+
+extension AuthorizeCoordinator: RegisterViewModelDelegate, LoginViewModelDelegate {
 
     func goToRegister(from controller: UIViewController) {
         let registerVC: RegisterViewController = RegisterViewController(nibName: "Register", bundle: nil)

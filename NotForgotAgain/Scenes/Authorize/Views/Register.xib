@@ -46,7 +46,7 @@
                     <rect key="frame" x="125" y="685.5" width="164" height="33"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Есть аккаунт? Войти">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleColor" systemColor="labelColor"/>
                     </state>
                     <connections>
                         <action selector="goToLogin" destination="-1" eventType="touchUpInside" id="NIN-ez-SeZ"/>
@@ -98,6 +98,9 @@
         <namedColor name="ButtonColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

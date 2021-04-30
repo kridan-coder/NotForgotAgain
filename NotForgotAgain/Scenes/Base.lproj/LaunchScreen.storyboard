@@ -7,11 +7,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Nunito.ttf">
-            <string>Nunito-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -21,19 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yq7-bQ-mhn" userLabel="NOT FORGOT">
-                                <rect key="frame" x="18.000000000000014" y="283" width="242.33333333333337" height="136"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notForgotText" translatesAutoresizingMaskIntoConstraints="NO" id="S5Z-mD-uTD">
+                                <rect key="frame" x="22.333333333333343" y="291.66666666666669" width="212" height="118.66666666666669"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Yq7-bQ-mhn" secondAttribute="height" multiplier="232:130" id="XQH-88-2oi"/>
+                                    <constraint firstAttribute="width" secondItem="S5Z-mD-uTD" secondAttribute="height" multiplier="232:130" id="vhU-7q-K82"/>
                                 </constraints>
-                                <string key="text">NOT
-FORGOT</string>
-                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="100"/>
-                                <color key="textColor" name="SplashScreenTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabletWithPen" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-LD-w1g">
-                                <rect key="frame" x="298.66666666666669" y="647.66666666666663" width="108.66666666666669" height="108.66666666666663"/>
+                                <rect key="frame" x="305.66666666666669" y="654.66666666666663" width="95" height="94.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fW3-LD-w1g" secondAttribute="height" multiplier="1:1" id="e5M-TV-DMC"/>
                                 </constraints>
@@ -42,13 +32,12 @@ FORGOT</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="SplashScreenBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fW3-LD-w1g" firstAttribute="centerY" secondItem="Yq7-bQ-mhn" secondAttribute="centerY" multiplier="2" id="F3u-fX-URn"/>
-                            <constraint firstItem="Yq7-bQ-mhn" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.16" id="bJL-WE-I9y"/>
-                            <constraint firstItem="Yq7-bQ-mhn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="jRi-zX-LOI"/>
+                            <constraint firstItem="S5Z-mD-uTD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.14" id="4cv-Y9-N1c"/>
+                            <constraint firstItem="S5Z-mD-uTD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.75" id="BeU-Bb-XdF"/>
+                            <constraint firstItem="fW3-LD-w1g" firstAttribute="centerY" secondItem="S5Z-mD-uTD" secondAttribute="centerY" multiplier="2" id="F3u-fX-URn"/>
+                            <constraint firstItem="S5Z-mD-uTD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.6" id="Org-Wu-1jo"/>
                             <constraint firstItem="fW3-LD-w1g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.65" id="oao-iM-fIE"/>
-                            <constraint firstItem="Yq7-bQ-mhn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.65" id="vUa-Ek-DpC"/>
-                            <constraint firstItem="fW3-LD-w1g" firstAttribute="height" secondItem="Yq7-bQ-mhn" secondAttribute="height" multiplier="0.8" id="w80-fC-b7i"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Yq7-bQ-mhn" secondAttribute="trailing" symbolic="YES" id="xQq-M6-wfc"/>
+                            <constraint firstItem="fW3-LD-w1g" firstAttribute="height" secondItem="S5Z-mD-uTD" secondAttribute="height" multiplier="0.8" id="w80-fC-b7i"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,12 +47,10 @@ FORGOT</string>
         </scene>
     </scenes>
     <resources>
-        <image name="tabletWithPen" width="99" height="99"/>
+        <image name="notForgotText" width="582" height="300"/>
+        <image name="tabletWithPen" width="295" height="295"/>
         <namedColor name="SplashScreenBackgroundColor">
             <color red="0.16078431372549021" green="0.16078431372549021" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="SplashScreenTextColor">
-            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

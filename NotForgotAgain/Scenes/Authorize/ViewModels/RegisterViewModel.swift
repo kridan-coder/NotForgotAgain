@@ -8,8 +8,12 @@
 import Foundation
 import UIKit
 
+protocol RegisterViewModelDelegate{
+    func goToLogin(from: UIViewController)
+}
+
 class RegisterViewModel{
-    weak var coordinatorDelegate: AuthorizeCoordinator?
+    var coordinatorDelegate: RegisterViewModelDelegate?
     
     func goToLogin(from: UIViewController){
         coordinatorDelegate?.goToLogin(from: from)
