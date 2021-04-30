@@ -8,6 +8,9 @@
 import Foundation
 import UIKit
 
+
+
+
 class LoginViewController: UIViewController {
     
     var viewModel: LoginViewModel!
@@ -15,14 +18,21 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var textFields: [UITextField]!
     
+//    override func viewWillAppear() {
+//        super.viewWillAppear()
+//        for textField in textFields {
+//            textField.addUnderline()
+//        }
+//
+//    }\
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
         for textField in textFields {
             textField.addUnderline()
         }
-        
     }
+    
     
     @IBAction func authorizeButtonPressed() {
         
