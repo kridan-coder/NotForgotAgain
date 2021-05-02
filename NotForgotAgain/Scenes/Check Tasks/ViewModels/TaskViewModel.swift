@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import UIKit
+
+protocol TaskViewModelDelegate{
+
+}
+
 class TaskViewModel{
-    weak var coordinatorDelegate: CheckTasksCoordinator?
+    var coordinatorDelegate: TaskViewModelDelegate?
     
     func viewWasLoaded(){
         
@@ -15,3 +21,5 @@ class TaskViewModel{
 
 
 }
+
+

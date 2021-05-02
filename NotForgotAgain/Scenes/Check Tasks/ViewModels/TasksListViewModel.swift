@@ -6,8 +6,14 @@
 //
 
 import Foundation
+
+protocol TasksListViewModelDelegate{
+
+}
+
+
 class TasksListViewModel{
-    weak var coordinatorDelegate: CheckTasksCoordinator?
+    var coordinatorDelegate: TasksListViewModelDelegate?
     
     func viewWasLoaded(){
         

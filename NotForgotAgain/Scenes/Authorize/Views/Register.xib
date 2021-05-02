@@ -41,6 +41,9 @@
                             <color key="value" name="ButtonColor"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="registerButtonPressed" destination="-1" eventType="touchUpInside" id="tRh-cn-q5c"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJo-7N-Snk">
                     <rect key="frame" x="125" y="685.5" width="164" height="33"/>

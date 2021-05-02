@@ -11,6 +11,7 @@ import UIKit
 
 protocol LoginViewModelDelegate{
     func goToRegister(from: UIViewController)
+    func goToCheckTasksScene(from: UIViewController)
 }
 
 class LoginViewModel{
@@ -18,6 +19,10 @@ class LoginViewModel{
     
     func goToRegister(from: UIViewController){
         coordinatorDelegate?.goToRegister(from: from)
+    }
+    
+    func goToCheckTasksScene(from: UIViewController){
+        coordinatorDelegate?.goToCheckTasksScene(from: from)
     }
 
 }

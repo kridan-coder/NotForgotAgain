@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TasksListViewController" customModule="NotForgotAgain" customModuleProvider="target">
             <connections>
+                <outlet property="stackView" destination="e72-2o-o46" id="q2y-m7-OYA"/>
                 <outlet property="tableView" destination="SzH-FD-WLw" id="gRB-uJ-Voo"/>
                 <outlet property="view" destination="PuW-g8-aPk" id="Wcb-4P-WN1"/>
             </connections>
@@ -76,6 +77,11 @@
                 <constraint firstItem="SzH-FD-WLw" firstAttribute="width" secondItem="kth-Qb-F5a" secondAttribute="width" id="vct-gR-Lkl"/>
                 <constraint firstItem="e72-2o-o46" firstAttribute="top" secondItem="kth-Qb-F5a" secondAttribute="top" priority="998" id="zOZ-Kz-iTh"/>
             </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="SzH-FD-WLw"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="-26" y="85"/>
         </view>
     </objects>

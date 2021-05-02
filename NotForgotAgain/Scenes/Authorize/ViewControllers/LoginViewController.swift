@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func authorizeButtonPressed() {
-        
+        viewModel.goToCheckTasksScene(from: self)
     }
     
     @IBAction func goToRegisterButtonPressed() {

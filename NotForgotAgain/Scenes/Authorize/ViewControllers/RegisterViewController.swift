@@ -21,6 +21,9 @@ class RegisterViewController: UIViewController {
         }
     }
     
+    @IBAction func registerButtonPressed() {
+        viewModel.goToCheckTasksScene(from: self)
+    }
     @IBAction func goToLogin() {
         
         viewModel.goToLogin(from: self)

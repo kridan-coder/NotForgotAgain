@@ -67,6 +67,13 @@ class AuthorizeCoordinator: Coordinator {
 
 
 extension AuthorizeCoordinator: RegisterViewModelDelegate, LoginViewModelDelegate {
+    func goToCheckTasksScene(from: UIViewController) {
+        
+        let checkTasksCoordinator = CheckTasksCoordinator(rootViewNavigationController: rootViewNavigationController)
+        checkTasksCoordinator.delegate = self
+        addChildCoordinator(checkTasksCoordinator)
+        checkTasksCoordinator.start()
+    }
 
     func goToRegister(from controller: UIViewController) {
         let registerVC: RegisterViewController = RegisterViewController(nibName: "Register", bundle: nil)
