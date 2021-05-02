@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 class CheckTasksCoordinator: Coordinator{
     var rootViewNavigationController: UINavigationController
     
@@ -26,10 +27,11 @@ class CheckTasksCoordinator: Coordinator{
     
     override func start() {
         
-        let tasksListVC = TasksListViewController(nibName: "Login", bundle: nil)
+        let tasksListVC = TasksListViewController(nibName: "TasksList", bundle: nil)
         tasksListVC.viewModel = tasksListViewModel
         tasksListVC.title = "Список задач"
-        rootViewNavigationController.setViewControllers([tasksListVC], animated: true)
+        tasksListVC.navigationItem.setHidesBackButton(true, animated: true)
+        rootViewNavigationController.pushViewController(tasksListVC, animated: true)
     }
     
 }
