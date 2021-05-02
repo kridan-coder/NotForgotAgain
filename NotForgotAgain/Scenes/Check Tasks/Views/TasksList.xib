@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TasksListViewController" customModule="NotForgotAgain" customModuleProvider="target">
             <connections>
                 <outlet property="addTaskBigButton" destination="UxM-cV-Ij6" id="dNS-4d-se4"/>
+                <outlet property="loader" destination="Cxw-o9-M4k" id="tPD-tm-4K8"/>
                 <outlet property="stackView" destination="e72-2o-o46" id="q2y-m7-OYA"/>
                 <outlet property="tableView" destination="SzH-FD-WLw" id="gRB-uJ-Voo"/>
                 <outlet property="view" destination="PuW-g8-aPk" id="Wcb-4P-WN1"/>
@@ -60,7 +61,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SzH-FD-WLw">
-                    <rect key="frame" x="0.0" y="213.66666666666669" width="428" height="678.33333333333326"/>
+                    <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Cxw-o9-M4k">
@@ -78,7 +79,7 @@
                 <constraint firstItem="UxM-cV-Ij6" firstAttribute="centerY" secondItem="kth-Qb-F5a" secondAttribute="centerY" multiplier="1.5" id="bYu-Cp-IcS"/>
                 <constraint firstItem="Cxw-o9-M4k" firstAttribute="centerY" secondItem="kth-Qb-F5a" secondAttribute="centerY" id="hkH-Vc-fG7"/>
                 <constraint firstItem="e72-2o-o46" firstAttribute="centerX" secondItem="kth-Qb-F5a" secondAttribute="centerX" id="jyZ-O1-EvI"/>
-                <constraint firstItem="SzH-FD-WLw" firstAttribute="height" secondItem="kth-Qb-F5a" secondAttribute="height" multiplier="0.8" id="kZH-dt-mty"/>
+                <constraint firstItem="SzH-FD-WLw" firstAttribute="height" secondItem="kth-Qb-F5a" secondAttribute="height" id="kZH-dt-mty"/>
                 <constraint firstItem="SzH-FD-WLw" firstAttribute="width" secondItem="kth-Qb-F5a" secondAttribute="width" id="vct-gR-Lkl"/>
                 <constraint firstItem="Cxw-o9-M4k" firstAttribute="centerX" secondItem="kth-Qb-F5a" secondAttribute="centerX" id="xMf-Pp-cTW"/>
                 <constraint firstItem="e72-2o-o46" firstAttribute="top" secondItem="kth-Qb-F5a" secondAttribute="top" priority="998" id="zOZ-Kz-iTh"/>

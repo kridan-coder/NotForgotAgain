@@ -14,11 +14,14 @@
 		934E171926316BD7007820BE /* Task.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934E171826316BD7007820BE /* Task.xib */; };
 		934E171E26316C1C007820BE /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171D26316C1C007820BE /* TaskViewController.swift */; };
 		934E172126316C36007820BE /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E172026316C36007820BE /* TaskViewModel.swift */; };
+		93525F0B263ECAE100203130 /* CellTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93525F0A263ECAE100203130 /* CellTask.swift */; };
+		93525F0E263ECBD500203130 /* CellCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93525F0D263ECBD500203130 /* CellCategory.swift */; };
+		93525F11263ECCFB00203130 /* CellTaskGather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93525F10263ECCFB00203130 /* CellTaskGather.swift */; };
 		9377B9E92631E41F0001CE01 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9E82631E41F0001CE01 /* time.png */; };
 		9377B9ED2631E5CE0001CE01 /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9EC2631E5CE0001CE01 /* label.png */; };
-		9377B9F22631F79E0001CE01 /* CellCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9377B9F02631F79E0001CE01 /* CellCategoryViewController.swift */; };
+		9377B9F22631F79E0001CE01 /* TableViewCellCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9377B9F02631F79E0001CE01 /* TableViewCellCategory.swift */; };
 		9377B9F32631F79E0001CE01 /* TableViewCellCategory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9F12631F79E0001CE01 /* TableViewCellCategory.xib */; };
-		9377B9F82631F8610001CE01 /* CellTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9377B9F62631F8610001CE01 /* CellTaskViewController.swift */; };
+		9377B9F82631F8610001CE01 /* TableViewCellTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9377B9F62631F8610001CE01 /* TableViewCellTask.swift */; };
 		9377B9F92631F8610001CE01 /* TableViewCellTask.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9F72631F8610001CE01 /* TableViewCellTask.xib */; };
 		9377B9FF2631FCF00001CE01 /* checkboxChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9FE2631FCF00001CE01 /* checkboxChecked.png */; };
 		9377BA022631FD220001CE01 /* checkboxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377BA012631FD210001CE01 /* checkboxUnchecked.png */; };
@@ -91,11 +94,14 @@
 		934E171826316BD7007820BE /* Task.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Task.xib; sourceTree = "<group>"; };
 		934E171D26316C1C007820BE /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		934E172026316C36007820BE /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		93525F0A263ECAE100203130 /* CellTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTask.swift; sourceTree = "<group>"; };
+		93525F0D263ECBD500203130 /* CellCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCategory.swift; sourceTree = "<group>"; };
+		93525F10263ECCFB00203130 /* CellTaskGather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTaskGather.swift; sourceTree = "<group>"; };
 		9377B9E82631E41F0001CE01 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = time.png; path = "../../../../../Downloads/iPhone 11 Pro/time.png"; sourceTree = "<group>"; };
 		9377B9EC2631E5CE0001CE01 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = label.png; path = "../../../../../Downloads/iPhone 11 Pro 2/label.png"; sourceTree = "<group>"; };
-		9377B9F02631F79E0001CE01 /* CellCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCategoryViewController.swift; sourceTree = "<group>"; };
+		9377B9F02631F79E0001CE01 /* TableViewCellCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCategory.swift; sourceTree = "<group>"; };
 		9377B9F12631F79E0001CE01 /* TableViewCellCategory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellCategory.xib; sourceTree = "<group>"; };
-		9377B9F62631F8610001CE01 /* CellTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTaskViewController.swift; sourceTree = "<group>"; };
+		9377B9F62631F8610001CE01 /* TableViewCellTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellTask.swift; sourceTree = "<group>"; };
 		9377B9F72631F8610001CE01 /* TableViewCellTask.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellTask.xib; sourceTree = "<group>"; };
 		9377B9FE2631FCF00001CE01 /* checkboxChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkboxChecked.png; path = "../../../../../Downloads/iPhone 11 Pro 3/checkboxChecked.png"; sourceTree = "<group>"; };
 		9377BA012631FD210001CE01 /* checkboxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkboxUnchecked.png; path = "../../../../../Downloads/iPhone 11 Pro 4/checkboxUnchecked.png"; sourceTree = "<group>"; };
@@ -233,8 +239,8 @@
 		934E170C26313C51007820BE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9377B9F62631F8610001CE01 /* CellTaskViewController.swift */,
-				9377B9F02631F79E0001CE01 /* CellCategoryViewController.swift */,
+				9377B9F62631F8610001CE01 /* TableViewCellTask.swift */,
+				9377B9F02631F79E0001CE01 /* TableViewCellCategory.swift */,
 				934E171226314061007820BE /* TasksListViewController.swift */,
 				934E171D26316C1C007820BE /* TaskViewController.swift */,
 			);
@@ -244,6 +250,9 @@
 		934E170D26313C5A007820BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				93525F0A263ECAE100203130 /* CellTask.swift */,
+				93525F0D263ECBD500203130 /* CellCategory.swift */,
+				93525F10263ECCFB00203130 /* CellTaskGather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -553,11 +562,14 @@
 			files = (
 				93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */,
 				934E171626314094007820BE /* TasksListViewModel.swift in Sources */,
+				93525F11263ECCFB00203130 /* CellTaskGather.swift in Sources */,
 				93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */,
-				9377B9F22631F79E0001CE01 /* CellCategoryViewController.swift in Sources */,
+				9377B9F22631F79E0001CE01 /* TableViewCellCategory.swift in Sources */,
 				9377BA062631FDD10001CE01 /* CheckBox.swift in Sources */,
 				93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */,
+				93525F0B263ECAE100203130 /* CellTask.swift in Sources */,
 				93FAB43926283A9200C83649 /* ApiClient.swift in Sources */,
+				93525F0E263ECBD500203130 /* CellCategory.swift in Sources */,
 				934E171E26316C1C007820BE /* TaskViewController.swift in Sources */,
 				934E171326314061007820BE /* TasksListViewController.swift in Sources */,
 				93FAB40B2628096200C83649 /* Coordinator.swift in Sources */,
@@ -568,7 +580,7 @@
 				93FAB451262E991400C83649 /* Extensions.swift in Sources */,
 				E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */,
 				E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */,
-				9377B9F82631F8610001CE01 /* CellTaskViewController.swift in Sources */,
+				9377B9F82631F8610001CE01 /* TableViewCellTask.swift in Sources */,
 				93FAB43F262B0F5100C83649 /* LoginViewController.swift in Sources */,
 				93FAB43C262B0C1400C83649 /* LoginViewModel.swift in Sources */,
 				934E172126316C36007820BE /* TaskViewModel.swift in Sources */,

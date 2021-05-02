@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="TableViewCellTask" customModule="NotForgotAgain" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellTask" rowHeight="80" id="KGk-i7-Jjw" customClass="TableViewCellTask" customModule="NotForgotAgain" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="338" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -18,22 +18,23 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebb-jw-lT2">
-                        <rect key="frame" x="16" y="9" width="98.5" height="30"/>
+                        <rect key="frame" x="16" y="12" width="98.5" height="24"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подзаголовок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfy-zS-qpe">
-                        <rect key="frame" x="16" y="44" width="108" height="20"/>
+                        <rect key="frame" x="16" y="41" width="108" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxB-Dl-OAM" customClass="CheckBox" customModule="NotForgotAgain" customModuleProvider="target">
-                        <rect key="frame" x="292" y="25" width="30" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxB-Dl-OAM">
+                        <rect key="frame" x="298" y="28" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="xxB-Dl-OAM" secondAttribute="height" multiplier="1:1" id="ixb-yD-bYI"/>
                         </constraints>
+                        <state key="normal" image="checkboxUnchecked"/>
                     </button>
                 </subviews>
                 <color key="backgroundColor" name="TaskColorGreen"/>
@@ -48,15 +49,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBoxButton" destination="xxB-Dl-OAM" id="fcP-cO-k4C"/>
+                <outlet property="header" destination="Ebb-jw-lT2" id="ZS5-WK-tqv"/>
+                <outlet property="subHeader" destination="wfy-zS-qpe" id="bYA-HG-2Zq"/>
+                <outlet property="wholeTask" destination="H2p-sc-9uM" id="vcA-ck-gZu"/>
+            </connections>
             <point key="canvasLocation" x="-34.782608695652179" y="105.13392857142857"/>
         </tableViewCell>
     </objects>
-    <designables>
-        <designable name="xxB-Dl-OAM">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-    </designables>
     <resources>
+        <image name="checkboxUnchecked" width="20" height="20"/>
         <namedColor name="TaskColorGreen">
             <color red="0.32156862745098042" green="0.80000000000000004" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
