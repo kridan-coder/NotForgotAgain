@@ -61,51 +61,6 @@ class TasksListViewController: UIViewController {
         })
     }
     
-    func hardcodeTable()
-    {
-        var collection = [CellTaskGather]()
-        
-        var category = CellCategory()
-        category.name = "Anime"
-        
-        var gather = CellTaskGather()
-        gather.category = category
-        
-        collection.append(gather)
-        
-        for i in 0...10{
-            let task = CellTask()
-            task.checked = false
-            task.description = "bla bla \(i)"
-            task.header = "Da \(i+1)"
-            task.id = i
-            let gather = CellTaskGather()
-            gather.task = task
-            collection.append(gather)
-        }
-        
-        category = CellCategory()
-        category.name = "Naruto"
-        
-        gather = CellTaskGather()
-        gather.category = category
-        
-        collection.append(gather)
-        
-        for i in 10...20{
-            let task = CellTask()
-            task.checked = true
-            task.description = "glu glu \(i)"
-            task.header = "Net \(i+1)"
-            task.id = i
-            let gather = CellTaskGather()
-            gather.task = task
-            collection.append(gather)
-        }
-        
-        tasksCollection = collection
-    }
-    
     func hideLayout(){
         tableView.isHidden = true
         stackView.isHidden = true
