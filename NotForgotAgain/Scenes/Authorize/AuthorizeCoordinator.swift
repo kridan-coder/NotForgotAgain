@@ -60,17 +60,6 @@ class AuthorizeCoordinator: Coordinator {
     
 }
 
-
-//extension AuthorizeCoordinator: SearchCoordinatorDelegate {
-//
-//    func didFinish(from coordinator: SearchCoordinator) {
-//        removeChildCoordinator(coordinator)
-//    }
-//
-//}
-
-
-
 extension AuthorizeCoordinator: RegisterViewModelDelegate, LoginViewModelDelegate {
     func goToCheckTasksScene(from: UIViewController) {
         
@@ -89,8 +78,6 @@ extension AuthorizeCoordinator: RegisterViewModelDelegate, LoginViewModelDelegat
         
         rootViewNavigationController.pushViewController(registerVC, animated: true)
         
-
-        //controller.present(registerVC, animated: true, completion: nil)
     }
     
     func goToLogin(from controller: UIViewController) {
@@ -98,10 +85,7 @@ extension AuthorizeCoordinator: RegisterViewModelDelegate, LoginViewModelDelegat
     }
 
     func goToTaskList(from controller: UIViewController) {
-        //let searchCoordinator = SearchCoordinator(rootViewController: rootNavigationController, apiClient: apiClient, searchInput: validatedState)
-        //searchCoordinator.delegate = self
-        //addChildCoordinator(searchCoordinator)
-        //searchCoordinator.start()
+
     }
 
 }
