@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,7 +25,6 @@
 		9377B9F92631F8610001CE01 /* TableViewCellTask.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9F72631F8610001CE01 /* TableViewCellTask.xib */; };
 		9377B9FF2631FCF00001CE01 /* checkboxChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377B9FE2631FCF00001CE01 /* checkboxChecked.png */; };
 		9377BA022631FD220001CE01 /* checkboxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 9377BA012631FD210001CE01 /* checkboxUnchecked.png */; };
-		9377BA062631FDD10001CE01 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9377BA052631FDD10001CE01 /* CheckBox.swift */; };
 		9392C3D1263C407E00BA60DC /* TaskCreateRedactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9392C3CF263C407E00BA60DC /* TaskCreateRedactTableViewController.swift */; };
 		9392C3D2263C407E00BA60DC /* TaskCreateRedactTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9392C3D0263C407E00BA60DC /* TaskCreateRedactTableViewController.xib */; };
 		9392C3D8263C54C300BA60DC /* notForgotText.png in Resources */ = {isa = PBXBuildFile; fileRef = 9392C3D6263C54C300BA60DC /* notForgotText.png */; };
@@ -108,7 +107,6 @@
 		9377B9F72631F8610001CE01 /* TableViewCellTask.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellTask.xib; sourceTree = "<group>"; };
 		9377B9FE2631FCF00001CE01 /* checkboxChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkboxChecked.png; path = "../../../../../Downloads/iPhone 11 Pro 3/checkboxChecked.png"; sourceTree = "<group>"; };
 		9377BA012631FD210001CE01 /* checkboxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkboxUnchecked.png; path = "../../../../../Downloads/iPhone 11 Pro 4/checkboxUnchecked.png"; sourceTree = "<group>"; };
-		9377BA052631FDD10001CE01 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		9392C3CF263C407E00BA60DC /* TaskCreateRedactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCreateRedactTableViewController.swift; sourceTree = "<group>"; };
 		9392C3D0263C407E00BA60DC /* TaskCreateRedactTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCreateRedactTableViewController.xib; sourceTree = "<group>"; };
 		9392C3D6263C54C300BA60DC /* notForgotText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notForgotText.png; path = "../../../../../Downloads/NotForgotAgain-5 2/notForgotText.png"; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 			isa = PBXGroup;
 			children = (
 				93FAB450262E991400C83649 /* Extensions.swift */,
-				9377BA052631FDD10001CE01 /* CheckBox.swift */,
 			);
 			path = "Additional Files";
 			sourceTree = "<group>";
@@ -418,7 +415,6 @@
 				5CF535D6ECF8BB1FF65D1B64 /* Pods-NotForgotAgain.debug.xcconfig */,
 				A46AAC8A2D1A0F6816EAD0CB /* Pods-NotForgotAgain.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -634,7 +630,6 @@
 				93525F11263ECCFB00203130 /* CellTaskGather.swift in Sources */,
 				93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */,
 				9377B9F22631F79E0001CE01 /* TableViewCellCategory.swift in Sources */,
-				9377BA062631FDD10001CE01 /* CheckBox.swift in Sources */,
 				93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */,
 				93525F0B263ECAE100203130 /* CellTask.swift in Sources */,
 				93FAB43926283A9200C83649 /* ApiClient.swift in Sources */,
