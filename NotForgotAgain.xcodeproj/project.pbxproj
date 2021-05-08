@@ -66,9 +66,6 @@
 		93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41926280C5900C83649 /* Nunito.ttf */; };
 		93FAB422262817E600C83649 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB41F262817E600C83649 /* pencil.png */; };
 		93FAB423262817E600C83649 /* chillGuy.png in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB420262817E600C83649 /* chillGuy.png */; };
-		93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB426262817F300C83649 /* tabletWithPen.svg */; };
-		93FAB42A262817F400C83649 /* chillGuy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB427262817F300C83649 /* chillGuy.svg */; };
-		93FAB42B262817F400C83649 /* pencil.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB428262817F300C83649 /* pencil.svg */; };
 		93FAB43226281D6100C83649 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB43126281D6100C83649 /* CustomButton.xib */; };
 		93FAB43626281E4A00C83649 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB43526281E4A00C83649 /* Login.xib */; };
 		93FAB43926283A9200C83649 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB43826283A9200C83649 /* ApiClient.swift */; };
@@ -148,9 +145,6 @@
 		93FAB41926280C5900C83649 /* Nunito.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nunito.ttf; path = ../../../../Downloads/nunito/Nunito.ttf; sourceTree = "<group>"; };
 		93FAB41F262817E600C83649 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pencil.png; path = rawAssets/rawImages/images/PNG/pencil.png; sourceTree = SOURCE_ROOT; };
 		93FAB420262817E600C83649 /* chillGuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chillGuy.png; path = rawAssets/rawImages/images/PNG/chillGuy.png; sourceTree = SOURCE_ROOT; };
-		93FAB426262817F300C83649 /* tabletWithPen.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = tabletWithPen.svg; path = rawAssets/rawImages/images/SVG/tabletWithPen.svg; sourceTree = SOURCE_ROOT; };
-		93FAB427262817F300C83649 /* chillGuy.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = chillGuy.svg; path = rawAssets/rawImages/images/SVG/chillGuy.svg; sourceTree = SOURCE_ROOT; };
-		93FAB428262817F300C83649 /* pencil.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = pencil.svg; path = rawAssets/rawImages/images/SVG/pencil.svg; sourceTree = SOURCE_ROOT; };
 		93FAB43126281D6100C83649 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		93FAB43526281E4A00C83649 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		93FAB43826283A9200C83649 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
@@ -378,7 +372,6 @@
 			isa = PBXGroup;
 			children = (
 				9392C3E4263C586400BA60DC /* icons */,
-				93FAB41E262817D500C83649 /* SVG */,
 				93FAB41D262817CF00C83649 /* PNG */,
 			);
 			path = "Raw Images";
@@ -397,16 +390,6 @@
 				93FAB41F262817E600C83649 /* pencil.png */,
 			);
 			path = PNG;
-			sourceTree = "<group>";
-		};
-		93FAB41E262817D500C83649 /* SVG */ = {
-			isa = PBXGroup;
-			children = (
-				93FAB427262817F300C83649 /* chillGuy.svg */,
-				93FAB428262817F300C83649 /* pencil.svg */,
-				93FAB426262817F300C83649 /* tabletWithPen.svg */,
-			);
-			path = SVG;
 			sourceTree = "<group>";
 		};
 		B53429B24414A5739B6E9DA7 /* Pods */ = {
@@ -538,7 +521,6 @@
 				9377B9FF2631FCF00001CE01 /* checkboxChecked.png in Resources */,
 				9392C422263C588C00BA60DC /* Icon-58.png in Resources */,
 				9392C407263C588C00BA60DC /* Icon-40.png in Resources */,
-				93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */,
 				93FAB43226281D6100C83649 /* CustomButton.xib in Resources */,
 				9392C406263C588C00BA60DC /* Icon-57.png in Resources */,
 				9392C420263C588C00BA60DC /* Icon-20.png in Resources */,
@@ -547,7 +529,6 @@
 				E64B63E3261A489400ABE6E4 /* LaunchScreen.storyboard in Resources */,
 				9392C41B263C588C00BA60DC /* Icon-144.png in Resources */,
 				9377B9F92631F8610001CE01 /* TableViewCellTask.xib in Resources */,
-				93FAB42B262817F400C83649 /* pencil.svg in Resources */,
 				9377B9F32631F79E0001CE01 /* TableViewCellCategory.xib in Resources */,
 				9392C41A263C588C00BA60DC /* Icon-88.png in Resources */,
 				9377BA022631FD220001CE01 /* checkboxUnchecked.png in Resources */,
@@ -561,7 +542,6 @@
 				9392C411263C588C00BA60DC /* Icon-512.png in Resources */,
 				9392C412263C588C00BA60DC /* Icon-180.png in Resources */,
 				9392C41D263C588C00BA60DC /* Icon-87.png in Resources */,
-				93FAB42A262817F400C83649 /* chillGuy.svg in Resources */,
 				9392C40D263C588C00BA60DC /* Icon-32.png in Resources */,
 				93FAB423262817E600C83649 /* chillGuy.png in Resources */,
 				934E171026313FFD007820BE /* TasksList.xib in Resources */,
