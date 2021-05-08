@@ -81,7 +81,6 @@
 		93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB426262817F300C83649 /* tabletWithPen.svg */; };
 		93FAB42A262817F400C83649 /* chillGuy.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB427262817F300C83649 /* chillGuy.svg */; };
 		93FAB42B262817F400C83649 /* pencil.svg in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB428262817F300C83649 /* pencil.svg */; };
-		93FAB43226281D6100C83649 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB43126281D6100C83649 /* CustomButton.xib */; };
 		93FAB43626281E4A00C83649 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FAB43526281E4A00C83649 /* Login.xib */; };
 		93FAB43926283A9200C83649 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB43826283A9200C83649 /* ApiClient.swift */; };
 		93FAB43C262B0C1400C83649 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB43B262B0C1400C83649 /* LoginViewModel.swift */; };
@@ -175,7 +174,6 @@
 		93FAB426262817F300C83649 /* tabletWithPen.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = tabletWithPen.svg; path = rawAssets/rawImages/images/SVG/tabletWithPen.svg; sourceTree = SOURCE_ROOT; };
 		93FAB427262817F300C83649 /* chillGuy.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = chillGuy.svg; path = rawAssets/rawImages/images/SVG/chillGuy.svg; sourceTree = SOURCE_ROOT; };
 		93FAB428262817F300C83649 /* pencil.svg */ = {isa = PBXFileReference; lastKnownFileType = text; name = pencil.svg; path = rawAssets/rawImages/images/SVG/pencil.svg; sourceTree = SOURCE_ROOT; };
-		93FAB43126281D6100C83649 /* CustomButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		93FAB43526281E4A00C83649 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
 		93FAB43826283A9200C83649 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		93FAB43B262B0C1400C83649 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -411,7 +409,6 @@
 			children = (
 				93FAB43526281E4A00C83649 /* Login.xib */,
 				93FAB443262BD8CF00C83649 /* Register.xib */,
-				93FAB43126281D6100C83649 /* CustomButton.xib */,
 				939F3CF226444055008431AE /* ViewControllerTest.swift */,
 				939F3CF326444055008431AE /* ViewControllerTest.xib */,
 			);
@@ -593,7 +590,6 @@
 				9392C422263C588C00BA60DC /* Icon-58.png in Resources */,
 				9392C407263C588C00BA60DC /* Icon-40.png in Resources */,
 				93FAB429262817F400C83649 /* tabletWithPen.svg in Resources */,
-				93FAB43226281D6100C83649 /* CustomButton.xib in Resources */,
 				9392C406263C588C00BA60DC /* Icon-57.png in Resources */,
 				9392C420263C588C00BA60DC /* Icon-20.png in Resources */,
 				9392C419263C588C00BA60DC /* Icon-76.png in Resources */,
