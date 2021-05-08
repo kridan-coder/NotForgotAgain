@@ -20,6 +20,47 @@ class TasksListViewController: UIViewController {
     
     var viewModel: TasksListViewModel!
     
+    func setTableTasks(tasks: [Task]?){
+        
+        guard let safeTasks = tasks else {return}
+        var collection = [CellTaskGather]()
+        
+
+        
+        for i in 0..<safeTasks.count {
+            var category = CellCategory()
+            let task = CellTask()
+            let gather = CellTaskGather()
+            task.checked = false
+            task.description = safeTasks[i].description
+            task.header = safeTasks[i].title
+            task.id = Int(safeTasks[i].id!)
+            category.id = Int(safeTasks[i].category?.id ?? 1)
+            category.name = safeTasks[i].category?.name
+            gather.task = task
+            if !collection.contains { $0.category?.name == safeTasks[i].category?.name }
+            {
+                let gather = CellTaskGather()
+                gather.category = category
+                collection.append(gather)
+                
+            }
+            collection.append(gather)
+        }
+        
+        tasksCollection = collection
+        initTableView()
+        loadingDone()
+    }
+    
+    func getAndLoadTasksFromAPI(){
+        viewModel.apiClient?.getTasks(onSuccess: {tasks in
+            self.setTableTasks(tasks: tasks)
+        }, onFailure: {_ in
+            print("Unexpected Error!")
+        })
+    }
+    
     func hardcodeTable()
     {
         var collection = [CellTaskGather]()
@@ -81,8 +122,9 @@ class TasksListViewController: UIViewController {
         tableView.register(UINib.init(nibName: tableViewCellTaskId, bundle: nil), forCellReuseIdentifier: tableViewCellTaskId)
         tableView.register(UINib.init(nibName: tableViewCellCategoryId, bundle: nil), forCellReuseIdentifier: tableViewCellCategoryId)
         
+        //tableView.shows = false
         
-        tableView.separatorColor = .clear
+        //tableView.separatorColor = .clear
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -94,9 +136,10 @@ class TasksListViewController: UIViewController {
         viewModel.viewWasLoaded()
 
         //temp
-        loadingDone()
-        hardcodeTable()
-        initTableView()
+
+        getAndLoadTasksFromAPI()
+
+
         
     }
 

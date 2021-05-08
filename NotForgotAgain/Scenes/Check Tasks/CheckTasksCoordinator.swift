@@ -10,17 +10,19 @@ import UIKit
 
 class CheckTasksCoordinator: Coordinator{
     var rootViewNavigationController: UINavigationController
-    
+    var apiClient: ApiClient
     weak var delegate: Coordinator?
     
     lazy var tasksListViewModel: TasksListViewModel! = {
         let viewModel = TasksListViewModel()
         viewModel.coordinatorDelegate = self
+        viewModel.apiClient = self.apiClient
         return viewModel
     }()
     
-    init(rootViewNavigationController: UINavigationController) {
+    init(rootViewNavigationController: UINavigationController, apiClient: ApiClient) {
         self.rootViewNavigationController = rootViewNavigationController
+        self.apiClient = apiClient
         
 
     }

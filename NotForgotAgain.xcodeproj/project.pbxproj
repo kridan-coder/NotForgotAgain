@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93092CDE2646875A00023940 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092CDD2646875A00023940 /* SignIn.swift */; };
+		93092D202646ADE600023940 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092D1F2646ADE600023940 /* SignUp.swift */; };
+		93092D232646AE7800023940 /* SignInSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092D222646AE7800023940 /* SignInSuccess.swift */; };
+		93092D262646AF3800023940 /* SignUpSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092D252646AF3800023940 /* SignUpSuccess.swift */; };
+		93092D2B2646E48600023940 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092D2A2646E48600023940 /* Category.swift */; };
+		93092D2E2646E4D700023940 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092D2D2646E4D700023940 /* Priority.swift */; };
+		93092D312646E57000023940 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93092D302646E57000023940 /* Task.swift */; };
 		934E170726313BE5007820BE /* CheckTasksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E170626313BE5007820BE /* CheckTasksCoordinator.swift */; };
 		934E171026313FFD007820BE /* TasksList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 934E170F26313FFD007820BE /* TasksList.xib */; };
 		934E171326314061007820BE /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E171226314061007820BE /* TasksListViewController.swift */; };
@@ -61,6 +68,10 @@
 		9392C420263C588C00BA60DC /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 9392C401263C588B00BA60DC /* Icon-20.png */; };
 		9392C421263C588C00BA60DC /* Icon-55.png in Resources */ = {isa = PBXBuildFile; fileRef = 9392C402263C588B00BA60DC /* Icon-55.png */; };
 		9392C422263C588C00BA60DC /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 9392C403263C588B00BA60DC /* Icon-58.png */; };
+		939F3C1C2642FAFF008431AE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939F3C1A2642FAFF008431AE /* TableViewCell.swift */; };
+		939F3C1D2642FAFF008431AE /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939F3C1B2642FAFF008431AE /* TableViewCell.xib */; };
+		939F3CF426444055008431AE /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939F3CF226444055008431AE /* ViewControllerTest.swift */; };
+		939F3CF526444055008431AE /* ViewControllerTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939F3CF326444055008431AE /* ViewControllerTest.xib */; };
 		93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB404262808DF00C83649 /* AppCoordinator.swift */; };
 		93FAB40B2628096200C83649 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB40A2628096200C83649 /* Coordinator.swift */; };
 		93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */; };
@@ -90,6 +101,13 @@
 /* Begin PBXFileReference section */
 		26D4E28333F46998E161B279 /* Pods_NotForgotAgain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotForgotAgain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF535D6ECF8BB1FF65D1B64 /* Pods-NotForgotAgain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotForgotAgain.debug.xcconfig"; path = "Target Support Files/Pods-NotForgotAgain/Pods-NotForgotAgain.debug.xcconfig"; sourceTree = "<group>"; };
+		93092CDD2646875A00023940 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		93092D1F2646ADE600023940 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		93092D222646AE7800023940 /* SignInSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSuccess.swift; sourceTree = "<group>"; };
+		93092D252646AF3800023940 /* SignUpSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSuccess.swift; sourceTree = "<group>"; };
+		93092D2A2646E48600023940 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		93092D2D2646E4D700023940 /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		93092D302646E57000023940 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		934E170626313BE5007820BE /* CheckTasksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTasksCoordinator.swift; sourceTree = "<group>"; };
 		934E170F26313FFD007820BE /* TasksList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TasksList.xib; sourceTree = "<group>"; };
 		934E171226314061007820BE /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +162,10 @@
 		9392C401263C588B00BA60DC /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-20.png"; path = "rawAssets/icons/Icon-20.png"; sourceTree = SOURCE_ROOT; };
 		9392C402263C588B00BA60DC /* Icon-55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-55.png"; path = "rawAssets/icons/Icon-55.png"; sourceTree = SOURCE_ROOT; };
 		9392C403263C588B00BA60DC /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-58.png"; path = "rawAssets/icons/Icon-58.png"; sourceTree = SOURCE_ROOT; };
+		939F3C1A2642FAFF008431AE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		939F3C1B2642FAFF008431AE /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		939F3CF226444055008431AE /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
+		939F3CF326444055008431AE /* ViewControllerTest.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerTest.xib; sourceTree = "<group>"; };
 		93FAB404262808DF00C83649 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		93FAB40A2628096200C83649 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		93FAB41426280A6400C83649 /* AuthorizeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeCoordinator.swift; sourceTree = "<group>"; };
@@ -184,6 +206,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93092D282646E46400023940 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				93525F0A263ECAE100203130 /* CellTask.swift */,
+				93525F0D263ECBD500203130 /* CellCategory.swift */,
+				93525F10263ECCFB00203130 /* CellTaskGather.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		93092D292646E47100023940 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				93092D2A2646E48600023940 /* Category.swift */,
+				93092D2D2646E4D700023940 /* Priority.swift */,
+				93092D302646E57000023940 /* Task.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		934DCECE26394A4600F5BBF8 /* Create Redact Task */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +270,8 @@
 				934E171826316BD7007820BE /* Task.xib */,
 				9377B9F12631F79E0001CE01 /* TableViewCellCategory.xib */,
 				9377B9F72631F8610001CE01 /* TableViewCellTask.xib */,
+				939F3C1A2642FAFF008431AE /* TableViewCell.swift */,
+				939F3C1B2642FAFF008431AE /* TableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,9 +299,8 @@
 		934E170D26313C5A007820BE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				93525F0A263ECAE100203130 /* CellTask.swift */,
-				93525F0D263ECBD500203130 /* CellCategory.swift */,
-				93525F10263ECCFB00203130 /* CellTaskGather.swift */,
+				93092D292646E47100023940 /* API */,
+				93092D282646E46400023940 /* TableView */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,6 +380,10 @@
 		93FAB4082628090A00C83649 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				93092CDD2646875A00023940 /* SignIn.swift */,
+				93092D1F2646ADE600023940 /* SignUp.swift */,
+				93092D252646AF3800023940 /* SignUpSuccess.swift */,
+				93092D222646AE7800023940 /* SignInSuccess.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +412,8 @@
 				93FAB43526281E4A00C83649 /* Login.xib */,
 				93FAB443262BD8CF00C83649 /* Register.xib */,
 				93FAB43126281D6100C83649 /* CustomButton.xib */,
+				939F3CF226444055008431AE /* ViewControllerTest.swift */,
+				939F3CF326444055008431AE /* ViewControllerTest.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -418,7 +467,6 @@
 				5CF535D6ECF8BB1FF65D1B64 /* Pods-NotForgotAgain.debug.xcconfig */,
 				A46AAC8A2D1A0F6816EAD0CB /* Pods-NotForgotAgain.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -525,6 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9392C41E263C588C00BA60DC /* Icon-80.png in Resources */,
+				939F3CF526444055008431AE /* ViewControllerTest.xib in Resources */,
 				934E171926316BD7007820BE /* Task.xib in Resources */,
 				9392C409263C588C00BA60DC /* Icon-1024.png in Resources */,
 				93FAB422262817E600C83649 /* pencil.png in Resources */,
@@ -537,6 +586,7 @@
 				9392C413263C588C00BA60DC /* Icon-29.png in Resources */,
 				9392C40A263C588C00BA60DC /* Icon-114.png in Resources */,
 				9392C41C263C588C00BA60DC /* Icon-100.png in Resources */,
+				939F3C1D2642FAFF008431AE /* TableViewCell.xib in Resources */,
 				9377B9ED2631E5CE0001CE01 /* label.png in Resources */,
 				93FAB41A26280C5900C83649 /* Nunito.ttf in Resources */,
 				9377B9FF2631FCF00001CE01 /* checkboxChecked.png in Resources */,
@@ -631,11 +681,17 @@
 			files = (
 				93FAB405262808DF00C83649 /* AppCoordinator.swift in Sources */,
 				934E171626314094007820BE /* TasksListViewModel.swift in Sources */,
+				939F3CF426444055008431AE /* ViewControllerTest.swift in Sources */,
+				93092D2B2646E48600023940 /* Category.swift in Sources */,
+				93092D312646E57000023940 /* Task.swift in Sources */,
+				93092D262646AF3800023940 /* SignUpSuccess.swift in Sources */,
+				93092D232646AE7800023940 /* SignInSuccess.swift in Sources */,
 				93525F11263ECCFB00203130 /* CellTaskGather.swift in Sources */,
 				93FAB447262BE7CC00C83649 /* RegisterViewController.swift in Sources */,
 				9377B9F22631F79E0001CE01 /* TableViewCellCategory.swift in Sources */,
 				9377BA062631FDD10001CE01 /* CheckBox.swift in Sources */,
 				93FAB41526280A6400C83649 /* AuthorizeCoordinator.swift in Sources */,
+				93092D2E2646E4D700023940 /* Priority.swift in Sources */,
 				93525F0B263ECAE100203130 /* CellTask.swift in Sources */,
 				93FAB43926283A9200C83649 /* ApiClient.swift in Sources */,
 				93525F0E263ECBD500203130 /* CellCategory.swift in Sources */,
@@ -647,8 +703,11 @@
 				E64B63DE261A488E00ABE6E4 /* NotForgotAgain.xcdatamodeld in Sources */,
 				93FAB44A262BE80800C83649 /* RegisterViewModel.swift in Sources */,
 				93FAB451262E991400C83649 /* Extensions.swift in Sources */,
+				93092CDE2646875A00023940 /* SignIn.swift in Sources */,
 				E64B63D4261A488E00ABE6E4 /* AppDelegate.swift in Sources */,
+				93092D202646ADE600023940 /* SignUp.swift in Sources */,
 				E64B63D6261A488E00ABE6E4 /* SceneDelegate.swift in Sources */,
+				939F3C1C2642FAFF008431AE /* TableViewCell.swift in Sources */,
 				9377B9F82631F8610001CE01 /* TableViewCellTask.swift in Sources */,
 				93FAB43F262B0F5100C83649 /* LoginViewController.swift in Sources */,
 				93FAB43C262B0C1400C83649 /* LoginViewModel.swift in Sources */,

@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="NotForgotAgain" customModuleProvider="target">
             <connections>
+                <outlet property="emailField" destination="odZ-mQ-Pkw" id="Piz-I5-Lqf"/>
+                <outlet property="errorLabel" destination="XkN-ye-4kv" id="oaL-9l-xe1"/>
+                <outlet property="passwordField" destination="Hu9-ok-dVr" id="WQk-QM-u33"/>
                 <outlet property="view" destination="iN0-l3-epB" id="foT-iS-Vfv"/>
                 <outletCollection property="textFields" destination="odZ-mQ-Pkw" collectionClass="NSMutableArray" id="SbG-VG-A9W"/>
                 <outletCollection property="textFields" destination="Hu9-ok-dVr" collectionClass="NSMutableArray" id="dDa-eJ-AAp"/>
@@ -68,6 +71,12 @@
                         </textField>
                     </subviews>
                 </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-ye-4kv">
+                    <rect key="frame" x="186.33333333333334" y="645.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,9 +84,11 @@
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-16" id="1yZ-27-iM8"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xAR-2P-dWD" secondAttribute="trailing" constant="16" id="392-3d-ohN"/>
                 <constraint firstItem="XO0-Ry-TJM" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="C59-uM-hCO"/>
+                <constraint firstItem="XkN-ye-4kv" firstAttribute="top" secondItem="XO0-Ry-TJM" secondAttribute="bottom" multiplier="1.1" id="JcZ-wk-PJo"/>
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LBO-al-L8x"/>
                 <constraint firstItem="xAR-2P-dWD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="TOg-AL-XCo"/>
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="bottom" secondItem="XO0-Ry-TJM" secondAttribute="top" multiplier="0.965" constant="8" id="YZS-5U-QLb"/>
+                <constraint firstItem="XkN-ye-4kv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="avE-t0-3ql"/>
                 <constraint firstItem="XO0-Ry-TJM" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" multiplier="1.55" id="dCw-Xm-ER7"/>
                 <constraint firstItem="xAR-2P-dWD" firstAttribute="centerY" secondItem="Fb0-qI-3jT" secondAttribute="centerY" multiplier="0.5" constant="-2.4166666666666288" id="g5d-gM-OYj"/>
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="height" secondItem="XO0-Ry-TJM" secondAttribute="height" multiplier="1.4" constant="8.8000000000000043" id="vJM-z2-XkY"/>

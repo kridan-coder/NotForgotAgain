@@ -20,6 +20,7 @@ class TableViewCellTask: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         wholeTask.layer.cornerRadius = 10
+        //self.selectionStyle = .none
     }
     
     override func layoutSubviews() {

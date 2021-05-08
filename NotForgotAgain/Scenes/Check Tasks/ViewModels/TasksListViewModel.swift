@@ -14,7 +14,7 @@ protocol TasksListViewModelDelegate{
 
 class TasksListViewModel{
     var coordinatorDelegate: TasksListViewModelDelegate?
-    
+    var apiClient: ApiClient?
     //let tasksCollection: [CellTaskCollection]
     
     func viewWasLoaded(){

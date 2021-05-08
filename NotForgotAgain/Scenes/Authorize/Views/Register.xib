@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="NotForgotAgain" customModuleProvider="target">
             <connections>
+                <outlet property="emailField" destination="agp-co-9dF" id="Spg-vI-vsk"/>
+                <outlet property="nameField" destination="Hc9-pK-fd2" id="Z6W-jl-i6y"/>
+                <outlet property="passwordField" destination="mlC-lK-obF" id="zmx-Va-dJ1"/>
                 <outlet property="view" destination="vnA-mp-mx4" id="q9j-9j-vZr"/>
                 <outletCollection property="textFields" destination="Hc9-pK-fd2" collectionClass="NSMutableArray" id="vDL-h3-dyt"/>
                 <outletCollection property="textFields" destination="mlC-lK-obF" collectionClass="NSMutableArray" id="QK5-0k-eDQ"/>

@@ -12,10 +12,14 @@ import UIKit
 protocol LoginViewModelDelegate{
     func goToRegister(from: UIViewController)
     func goToCheckTasksScene(from: UIViewController)
+    
 }
 
 class LoginViewModel{
     var coordinatorDelegate: LoginViewModelDelegate?
+    
+    var apiClient: ApiClient?
+    
     
     func goToRegister(from: UIViewController){
         coordinatorDelegate?.goToRegister(from: from)

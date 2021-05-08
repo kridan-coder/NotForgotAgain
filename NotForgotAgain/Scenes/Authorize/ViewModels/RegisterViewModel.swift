@@ -14,6 +14,8 @@ protocol RegisterViewModelDelegate{
 }
 
 class RegisterViewModel{
+    
+    var apiClient: ApiClient?
     var coordinatorDelegate: RegisterViewModelDelegate?
     
     func goToLogin(from: UIViewController){

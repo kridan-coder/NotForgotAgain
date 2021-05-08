@@ -10,6 +10,8 @@ import UIKit
 
 class AuthorizeCoordinator: Coordinator {
   
+    var apiClient: ApiClient
+    
     // MARK: - Properties
   
     let rootViewNavigationController: UINavigationController
@@ -26,18 +28,21 @@ class AuthorizeCoordinator: Coordinator {
     lazy var loginViewModel: LoginViewModel! = {
         let viewModel = LoginViewModel()
         viewModel.coordinatorDelegate = self
+        viewModel.apiClient = apiClient
         return viewModel
     }()
     
     lazy var registerViewModel: RegisterViewModel! = {
         let viewModel = RegisterViewModel()
         viewModel.coordinatorDelegate = self
+        viewModel.apiClient = apiClient
         return viewModel
     }()
 
     // MARK: - Coordinator
-    init(rootViewNavigationController: UINavigationController) {
+    init(rootViewNavigationController: UINavigationController, apiClient: ApiClient) {
         self.rootViewNavigationController = rootViewNavigationController
+        self.apiClient = apiClient
     }
 
     override func start() {
@@ -69,7 +74,7 @@ class AuthorizeCoordinator: Coordinator {
 extension AuthorizeCoordinator: RegisterViewModelDelegate, LoginViewModelDelegate {
     func goToCheckTasksScene(from: UIViewController) {
         
-        let checkTasksCoordinator = CheckTasksCoordinator(rootViewNavigationController: rootViewNavigationController)
+        let checkTasksCoordinator = CheckTasksCoordinator(rootViewNavigationController: rootViewNavigationController, apiClient: apiClient)
         checkTasksCoordinator.delegate = self
         addChildCoordinator(checkTasksCoordinator)
         checkTasksCoordinator.start()

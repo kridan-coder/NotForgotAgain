@@ -14,6 +14,8 @@ class AppCoordinator: Coordinator {
     // MARK: - Properties
     let window: UIWindow?
     
+    let apiClient = ApiClient()
+    
     lazy var rootViewNavigationController: UINavigationController = {
         var controller = UINavigationController()
         
@@ -39,7 +41,7 @@ class AppCoordinator: Coordinator {
         window.rootViewController = rootViewNavigationController
         window.makeKeyAndVisible()
         
-        let authorizeCoordinator = AuthorizeCoordinator(rootViewNavigationController: rootViewNavigationController)
+        let authorizeCoordinator = AuthorizeCoordinator(rootViewNavigationController: rootViewNavigationController, apiClient: apiClient)
         addChildCoordinator(authorizeCoordinator)
         authorizeCoordinator.start()
         
