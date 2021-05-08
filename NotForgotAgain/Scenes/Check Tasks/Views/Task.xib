@@ -11,6 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskViewController">
             <connections>
+                <outlet property="descriptionTextView" destination="L7Z-i7-dqr" id="zmw-Zd-C2b"/>
+                <outlet property="errorLabel" destination="xYT-nl-0eO" id="7eg-qP-lXw"/>
+                <outlet property="labelMarkDone" destination="YCc-VL-OTF" id="LHB-33-yST"/>
+                <outlet property="neccessityLabel" destination="iQ0-Yn-Inn" id="uAT-hk-TVs"/>
+                <outlet property="timeLabel" destination="sqk-bl-4QO" id="VdX-wQ-3hP"/>
                 <outlet property="view" destination="uMr-T6-ECf" id="c87-I3-se2"/>
             </connections>
         </placeholder>
