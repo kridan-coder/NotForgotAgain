@@ -98,6 +98,12 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYT-nl-0eO">
+                    <rect key="frame" x="193.33333333333334" y="571.33333333333337" width="41.333333333333343" height="20.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="aPE-ut-LCx"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -105,6 +111,7 @@
                 <constraint firstItem="aPE-ut-LCx" firstAttribute="trailing" secondItem="dEM-Hk-Fb7" secondAttribute="trailing" constant="16" id="2y2-yL-CEP"/>
                 <constraint firstItem="dEM-Hk-Fb7" firstAttribute="top" secondItem="aPE-ut-LCx" secondAttribute="top" multiplier="3" id="5I9-l9-Lpo"/>
                 <constraint firstItem="L7Z-i7-dqr" firstAttribute="width" secondItem="dEM-Hk-Fb7" secondAttribute="width" multiplier="0.95" id="8gH-yr-qr5"/>
+                <constraint firstItem="xYT-nl-0eO" firstAttribute="top" secondItem="sqk-bl-4QO" secondAttribute="bottom" multiplier="2.2" constant="5" id="DcF-p2-lHc"/>
                 <constraint firstItem="L7Z-i7-dqr" firstAttribute="leading" secondItem="dEM-Hk-Fb7" secondAttribute="leading" constant="-4" id="J4j-X0-X3z"/>
                 <constraint firstItem="iQ0-Yn-Inn" firstAttribute="centerY" secondItem="OrR-eH-e83" secondAttribute="centerY" id="Zfp-xC-JPA"/>
                 <constraint firstItem="iQ0-Yn-Inn" firstAttribute="width" secondItem="OrR-eH-e83" secondAttribute="width" multiplier="5.65714" id="Zvv-GZ-BaQ"/>
@@ -114,6 +121,7 @@
                 <constraint firstItem="UE3-HC-Uff" firstAttribute="top" secondItem="L7Z-i7-dqr" secondAttribute="bottom" constant="10" id="gy1-K2-5Sk"/>
                 <constraint firstItem="UE3-HC-Uff" firstAttribute="leading" secondItem="aPE-ut-LCx" secondAttribute="leading" constant="16" id="iUv-tx-qWe"/>
                 <constraint firstItem="iQ0-Yn-Inn" firstAttribute="height" secondItem="OrR-eH-e83" secondAttribute="height" multiplier="0.677778" id="lAy-wu-i7E"/>
+                <constraint firstItem="xYT-nl-0eO" firstAttribute="centerX" secondItem="aPE-ut-LCx" secondAttribute="centerX" id="pjc-Qp-4np"/>
                 <constraint firstItem="L7Z-i7-dqr" firstAttribute="top" secondItem="dEM-Hk-Fb7" secondAttribute="bottom" multiplier="1.05" id="utT-V8-si4"/>
             </constraints>
             <point key="canvasLocation" x="-26" y="85"/>
