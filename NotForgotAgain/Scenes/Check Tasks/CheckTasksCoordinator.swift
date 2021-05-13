@@ -20,6 +20,13 @@ class CheckTasksCoordinator: Coordinator{
         return viewModel
     }()
     
+    lazy var taskViewModel: TaskViewModel! = {
+        let viewModel = TaskViewModel()
+        viewModel.coordinatorDelegate = self
+        viewModel.apiClient = self.apiClient
+        return viewModel
+    }()
+    
     init(rootViewNavigationController: UINavigationController, apiClient: ApiClient) {
         self.rootViewNavigationController = rootViewNavigationController
         self.apiClient = apiClient
@@ -38,7 +45,32 @@ class CheckTasksCoordinator: Coordinator{
     
 }
 
+extension CheckTasksCoordinator: TaskViewModelDelegate {
+    
+}
 
 extension CheckTasksCoordinator: TasksListViewModelDelegate  {
+    func goToTask(task: Int) {
+        apiClient.getTasks(onSuccess: {
+            tasks in
+            guard let cells = tasks else {return}
+            for cell in cells{
+                if cell.id! == task{
+                    let taskVC = TaskViewController(nibName: "Task", bundle: nil)
+                    
+                    taskVC.viewModel = self.taskViewModel
+                    taskVC.taskData = cell
+                    taskVC.title = "Заметка"
+                    taskVC.navigationItem.setHidesBackButton(true, animated: true)
+                    
+                    self.rootViewNavigationController.pushViewController(taskVC, animated: true)
+                }
+            }
+        }, onFailure: {error in
+            print(error)
+            
+        })
+    }
+    
 
 }

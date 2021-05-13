@@ -15,10 +15,12 @@ protocol TaskViewModelDelegate{
 class TaskViewModel{
     var coordinatorDelegate: TaskViewModelDelegate?
     
+    var apiClient: ApiClient!
+    
     func viewWasLoaded(){
         
     }
-
+    
 
 }
 

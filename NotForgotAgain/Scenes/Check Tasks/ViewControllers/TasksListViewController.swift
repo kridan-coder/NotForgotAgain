@@ -153,7 +153,10 @@ extension TasksListViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasksCollection.count
     }
-    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        guard let task = tasksCollection[indexPath.item].task else {return}
+        viewModel.goToTask(task: task.id!)
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         if tasksCollection[indexPath.item].category != nil{

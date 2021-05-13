@@ -62,19 +62,19 @@
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почтовый ящик" minimumFontSize="27" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-mQ-Pkw" userLabel="Почтовый ящик">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="28"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="27" translatesAutoresizingMaskIntoConstraints="NO" id="Hu9-ok-dVr">
+                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="27" translatesAutoresizingMaskIntoConstraints="NO" id="Hu9-ok-dVr">
                             <rect key="frame" x="0.0" y="78" width="382" height="28"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                     </subviews>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-ye-4kv">
-                    <rect key="frame" x="186.33333333333334" y="645.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-ye-4kv">
+                    <rect key="frame" x="186.33333333333334" y="588.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -84,7 +84,7 @@
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-16" id="1yZ-27-iM8"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xAR-2P-dWD" secondAttribute="trailing" constant="16" id="392-3d-ohN"/>
                 <constraint firstItem="XO0-Ry-TJM" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="C59-uM-hCO"/>
-                <constraint firstItem="XkN-ye-4kv" firstAttribute="top" secondItem="XO0-Ry-TJM" secondAttribute="bottom" multiplier="1.1" id="JcZ-wk-PJo"/>
+                <constraint firstItem="XkN-ye-4kv" firstAttribute="top" secondItem="XO0-Ry-TJM" secondAttribute="bottom" multiplier="1.003" id="JcZ-wk-PJo"/>
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LBO-al-L8x"/>
                 <constraint firstItem="xAR-2P-dWD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="TOg-AL-XCo"/>
                 <constraint firstItem="Fb0-qI-3jT" firstAttribute="bottom" secondItem="XO0-Ry-TJM" secondAttribute="top" multiplier="0.965" constant="8" id="YZS-5U-QLb"/>

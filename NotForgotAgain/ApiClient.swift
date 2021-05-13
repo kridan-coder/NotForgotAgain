@@ -13,8 +13,6 @@ class ApiClient{
 
     let baseURL = "http://practice.mobile.kreosoft.ru/api/"
     
-    
-    
     func signIn(requestData: SignIn, onSuccess: @escaping (SignInSuccess) -> Void, onFailure: @escaping (String) -> Void) {
         
         AF.request(baseURL + "login", method: .post, parameters: requestData, encoder: JSONParameterEncoder.default)

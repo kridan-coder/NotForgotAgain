@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -12,8 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="NotForgotAgain" customModuleProvider="target">
             <connections>
                 <outlet property="emailField" destination="agp-co-9dF" id="Spg-vI-vsk"/>
+                <outlet property="errorLabel" destination="bkC-sr-dZf" id="oXv-ec-Hlr"/>
                 <outlet property="nameField" destination="Hc9-pK-fd2" id="Z6W-jl-i6y"/>
                 <outlet property="passwordField" destination="mlC-lK-obF" id="zmx-Va-dJ1"/>
+                <outlet property="passwordRepeatField" destination="OB1-gF-h8o" id="h3x-az-F9r"/>
                 <outlet property="view" destination="vnA-mp-mx4" id="q9j-9j-vZr"/>
                 <outletCollection property="textFields" destination="Hc9-pK-fd2" collectionClass="NSMutableArray" id="vDL-h3-dyt"/>
                 <outletCollection property="textFields" destination="mlC-lK-obF" collectionClass="NSMutableArray" id="QK5-0k-eDQ"/>
@@ -23,11 +25,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="vnA-mp-mx4">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-Nh-36B">
-                    <rect key="frame" x="16" y="614.5" width="382" height="55"/>
+                    <rect key="frame" x="16" y="637" width="396" height="55"/>
                     <color key="backgroundColor" name="ButtonColor"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                     <state key="normal" title="Зарегистрироваться">
@@ -49,7 +51,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJo-7N-Snk">
-                    <rect key="frame" x="125" y="685.5" width="164" height="33"/>
+                    <rect key="frame" x="132" y="709" width="164" height="33"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Есть аккаунт? Войти">
                         <color key="titleColor" systemColor="labelColor"/>
@@ -59,41 +61,49 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Jfo-gm-cDQ">
-                    <rect key="frame" x="16" y="241.5" width="382" height="262"/>
+                    <rect key="frame" x="16" y="254.33333333333337" width="396" height="262"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hc9-pK-fd2" userLabel="Имя">
-                            <rect key="frame" x="0.0" y="0.0" width="382" height="28"/>
+                            <rect key="frame" x="0.0" y="0.0" width="396" height="28"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почтовый ящик" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agp-co-9dF" userLabel="Почтовый ящик">
-                            <rect key="frame" x="0.0" y="78" width="382" height="28"/>
+                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Почтовый ящик" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agp-co-9dF" userLabel="Почтовый ящик">
+                            <rect key="frame" x="0.0" y="77.999999999999972" width="396" height="28"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-lK-obF">
-                            <rect key="frame" x="0.0" y="156" width="382" height="28"/>
+                        <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-lK-obF">
+                            <rect key="frame" x="0.0" y="155.99999999999997" width="396" height="28"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OB1-gF-h8o" userLabel="Повторите пароль">
-                            <rect key="frame" x="0.0" y="234" width="382" height="28"/>
+                        <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OB1-gF-h8o" userLabel="Повторите пароль">
+                            <rect key="frame" x="0.0" y="233.99999999999997" width="396" height="28.000000000000028"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                         </textField>
                     </subviews>
                 </stackView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkC-sr-dZf">
+                    <rect key="frame" x="193.33333333333334" y="756.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="FXl-5s-3Ux"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fTd-Nh-36B" firstAttribute="trailing" secondItem="FXl-5s-3Ux" secondAttribute="trailing" constant="-16" id="3hT-fA-3gy"/>
                 <constraint firstItem="fTd-Nh-36B" firstAttribute="leading" secondItem="FXl-5s-3Ux" secondAttribute="leading" constant="16" id="Ahr-UX-XzP"/>
+                <constraint firstItem="bkC-sr-dZf" firstAttribute="centerX" secondItem="SJo-7N-Snk" secondAttribute="centerX" id="MNl-bn-xzP"/>
                 <constraint firstItem="SJo-7N-Snk" firstAttribute="centerX" secondItem="FXl-5s-3Ux" secondAttribute="centerX" id="NnX-cS-RdT"/>
                 <constraint firstItem="Jfo-gm-cDQ" firstAttribute="centerY" secondItem="fTd-Nh-36B" secondAttribute="centerY" multiplier="0.58" id="TjW-bU-lWE"/>
                 <constraint firstItem="fTd-Nh-36B" firstAttribute="bottom" secondItem="SJo-7N-Snk" secondAttribute="top" multiplier="0.965" constant="8" id="eln-da-gQL"/>
                 <constraint firstItem="SJo-7N-Snk" firstAttribute="centerY" secondItem="FXl-5s-3Ux" secondAttribute="centerY" multiplier="1.55" id="h2n-fE-YYl"/>
                 <constraint firstItem="Jfo-gm-cDQ" firstAttribute="leading" secondItem="FXl-5s-3Ux" secondAttribute="leading" constant="16" id="jaO-Yy-Rxu"/>
+                <constraint firstItem="bkC-sr-dZf" firstAttribute="top" secondItem="SJo-7N-Snk" secondAttribute="bottom" multiplier="1.02" id="kmf-Eq-pJQ"/>
                 <constraint firstItem="fTd-Nh-36B" firstAttribute="height" secondItem="SJo-7N-Snk" secondAttribute="height" multiplier="1.4" constant="8.8000000000000043" id="lOj-Ha-NJH"/>
                 <constraint firstItem="FXl-5s-3Ux" firstAttribute="trailing" secondItem="Jfo-gm-cDQ" secondAttribute="trailing" constant="16" id="ntI-hB-BSV"/>
             </constraints>

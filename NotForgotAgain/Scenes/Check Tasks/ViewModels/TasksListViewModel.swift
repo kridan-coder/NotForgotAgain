@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TasksListViewModelDelegate{
-
+    func goToTask(task: Int)
 }
 
 
@@ -21,5 +21,7 @@ class TasksListViewModel{
         
     }
 
-
+    func goToTask(task: Int){
+        coordinatorDelegate?.goToTask(task: task)
+    }
 }

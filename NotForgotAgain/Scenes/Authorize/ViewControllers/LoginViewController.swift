@@ -21,11 +21,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+        let nextTag = textField.tag + 1
+        if let nextField = textField.superview?.viewWithTag(nextTag){
+            nextField.becomeFirstResponder()
+        }
+        else {
+            textField.resignFirstResponder()
+        }
+
         return true
     }
     
-    
+    func setError(error: String){
+        errorLabel.text = error
+        errorLabel.isHidden = false
+    }
     var viewModel: LoginViewModel!
     
     
@@ -59,6 +69,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func makeRequest(){
         guard let emailText = emailField.text else {return}
         guard let passwordText = passwordField.text else {return}
+        if (!emailText.contains("@")) {
+            setError(error: "Убедитесь, что почта верна.")
+            return
+        }
         let parameter = SignIn(email: emailText, password: passwordText)
         viewModel.apiClient?.signIn(requestData: parameter, onSuccess: {response in
             self.loginSuccess(response: response)
